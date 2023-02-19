@@ -1,0 +1,48 @@
+@charset "UTF-8";
+:root {
+  --color-teal-1: #5CE0D8;
+  --color-teal-3: #EEFCFB;
+  --color-yellow-1: #FFCF43;
+  --color-yellow-2: #FFF5D6;
+  --color-blue: #0A89FF;
+  --color-black: #050720;
+  --color-white: #FFFFFF;
+}
+
+h1,
+.h1 {
+  font-size: 96px;
+  font-family: "Lalezar", cursive;
+}
+
+h2,
+.h2 {
+  font-size: 64px;
+  font-family: "Lalezar", cursive;
+}
+
+h3,
+.h3 {
+  font-size: 32px;
+}
+
+h4,
+.h4 {
+  font-size: 30px;
+}
+
+h5,
+.h5 {
+  font-size: 24px;
+}
+
+h6,
+.h6 {
+  font-size: 16px;
+}
+
+/*--------------Títulos de la sección  de descrippcion de las apps--------*/
+.article__title--supersize {
+  font-size: 128px;
+  color: var(--color-teal-1);
+}
