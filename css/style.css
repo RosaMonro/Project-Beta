@@ -1,7 +1,7 @@
 @charset "UTF-8";
 :root {
   --color-teal-1: #5CE0D8;
-  --color-teal-3: #EEFCFB;
+  --color-teal-2: #EEFCFB;
   --color-yellow-1: #FFCF43;
   --color-yellow-2: #FFF5D6;
   --color-blue: #0A89FF;
@@ -9,40 +9,168 @@
   --color-white: #FFFFFF;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+/*------------------------------------ MÁRGENES----------------------------------*/
+body {
+  margin: 1rem;
+}
+
 h1,
 .h1 {
-  font-size: 96px;
+  font-size: 3.6rem;
   font-family: "Lalezar", cursive;
 }
 
+@media only screen and (min-width: 613px) {
+  h1,
+.h1 {
+    font-size: 5.4rem;
+  }
+}
+@media only screen and (min-width: 950px) {
+  h1,
+.h1 {
+    font-size: 6.4rem;
+  }
+}
+@media only screen and (min-width: 1004px) {
+  h1,
+.h1 {
+    font-size: 9.6rem;
+  }
+}
 h2,
 .h2 {
-  font-size: 64px;
+  font-size: 3.2rem;
   font-family: "Lalezar", cursive;
 }
 
+@media only screen and (min-width: 613px) {
+  h2,
+.h2 {
+    font-size: 4.8rem;
+  }
+}
+@media only screen and (min-width: 950px) {
+  h2,
+.h2 {
+    font-size: 5.4rem;
+  }
+}
+@media only screen and (min-width: 1004px) {
+  h2,
+.h2 {
+    font-size: 6.4rem;
+  }
+}
 h3,
 .h3 {
-  font-size: 32px;
+  font-size: 3rem;
+  font-family: "Maitree", serif;
 }
 
+@media only screen and (min-width: 1004px) {
+  h3,
+.h3 {
+    font-size: 3.2rem;
+  }
+}
 h4,
 .h4 {
-  font-size: 30px;
+  font-size: 1.8rem;
+  font-family: "Maitree", serif;
 }
 
+@media only screen and (min-width: 613px) {
+  h4,
+.h4 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 950px) {
+  h4,
+.h4 {
+    font-size: 2.4rem;
+  }
+}
+@media only screen and (min-width: 1004px) {
+  h4,
+.h4 {
+    font-size: 3rem;
+  }
+}
 h5,
 .h5 {
-  font-size: 24px;
+  font-size: 1.6rem;
+  font-family: "Maitree", serif;
 }
 
+@media only screen and (min-width: 950px) {
+  h5,
+.h5 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 1004px) {
+  h5,
+.h5 {
+    font-size: 2.4rem;
+  }
+}
 h6,
 .h6 {
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 /*--------------Títulos de la sección  de descrippcion de las apps--------*/
-.article__title--supersize {
-  font-size: 128px;
-  color: var(--color-teal-1);
+p {
+  font-size: 1.6rem;
+  font-family: "Maitree", serif;
+}
+
+@media only screen and (min-width: 950px) {
+  p {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 1004px) {
+  p {
+    font-size: 2.4rem;
+  }
+}
+.topbar__logo--bicolor {
+  width: 130px;
+  height: 44px;
+}
+
+.topbar__burger-icon {
+  width: 36px;
+  height: 24px;
+}
+
+.logo--amarillo {
+  width: 143px;
+  height: 39.1px;
+}
+
+.topbar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card-intro {
+  background-color: var(--color-yellow-1);
+}
+
+.button__google {
+  width: 207px;
+  height: 80px;
 }
