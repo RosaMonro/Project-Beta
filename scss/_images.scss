@@ -10,6 +10,20 @@
     height: 24px;
 }
 
+@media only screen and (min-width: 1040px) {
+    .topbar__logo--bicolor {
+        width: 200px;
+        height: 52px;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .topbar__logo--bicolor {
+        width: 260px;
+        height: 69px;
+    }
+}
+
 //------------------IMÁGENES FOOTER----------//
 
 .logo--amarillo {

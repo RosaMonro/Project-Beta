@@ -14,19 +14,21 @@ h1,
       }
     }
 
-    @media only screen and (min-width: 950px) {
+    @media only screen and (min-width: 960px) {
         h1,
       .h1 {
           font-size: 6.4rem;
       }
     }
 
-    @media only screen and (min-width: 1004px) {
-        h1,
-      .h1 {
-          font-size: 9.6rem;
-      }
+    @media only screen and (min-width: 1275px) {
+      h1,
+    .h1 {
+        font-size: 8.2rem;
     }
+  }
+
+
 
 
 
@@ -93,7 +95,7 @@ h4,
     }
     }
 
-    @media only screen and (min-width: 1004px) {
+    @media only screen and (min-width: 1140px) {
       h4,
     .h4 {
         font-size: 3rem;

@@ -1,3 +1,14 @@
 .card-intro {
+    // margin: 4.8rem 0;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 8%;
+    padding-right: 8%;
     background-color: var(--color-yellow-1);
 }
+
+.card-intro__title,
+.card-intro__subtitle {
+    line-height: 140%;
+}
+

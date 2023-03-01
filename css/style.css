@@ -11,13 +11,40 @@
 
 html {
   font-size: 62.5%;
+  color: var(--color-black);
 }
 
 /*------------------------------------ MÁRGENES----------------------------------*/
 body {
-  margin: 1rem;
+  padding: 1rem;
+  max-width: 170rem;
+  margin-top: 8.7rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+main {
+  max-width: 124rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (min-width: 620px) {
+  body {
+    padding: 3rem;
+  }
+}
+@media only screen and (min-width: 830px) {
+  body {
+    padding: 6rem;
+  }
+}
+@media only screen and (min-width: 1038px) {
+  body {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+}
 h1,
 .h1 {
   font-size: 3.6rem;
@@ -30,16 +57,16 @@ h1,
     font-size: 5.4rem;
   }
 }
-@media only screen and (min-width: 950px) {
+@media only screen and (min-width: 960px) {
   h1,
 .h1 {
     font-size: 6.4rem;
   }
 }
-@media only screen and (min-width: 1004px) {
+@media only screen and (min-width: 1275px) {
   h1,
 .h1 {
-    font-size: 9.6rem;
+    font-size: 8.2rem;
   }
 }
 h2,
@@ -96,7 +123,7 @@ h4,
     font-size: 2.4rem;
   }
 }
-@media only screen and (min-width: 1004px) {
+@media only screen and (min-width: 1140px) {
   h4,
 .h4 {
     font-size: 3rem;
@@ -151,23 +178,50 @@ p {
   height: 24px;
 }
 
+@media only screen and (min-width: 1040px) {
+  .topbar__logo--bicolor {
+    width: 200px;
+    height: 52px;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .topbar__logo--bicolor {
+    width: 260px;
+    height: 69px;
+  }
+}
 .logo--amarillo {
   width: 143px;
   height: 39.1px;
 }
 
 .topbar {
-  width: 100%;
+  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 2rem 2rem;
+  position: fixed;
+  inset: 0 0 auto 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .card-intro {
+  padding-top: 4%;
+  padding-bottom: 4%;
+  padding-left: 8%;
+  padding-right: 8%;
   background-color: var(--color-yellow-1);
+}
+
+.card-intro__title,
+.card-intro__subtitle {
+  line-height: 140%;
 }
 
 .button__google {

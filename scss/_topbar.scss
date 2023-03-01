@@ -1,8 +1,12 @@
 
 .topbar {
-    width: 100%;
+    background-color: #fff;
     display: flex;
     justify-content: space-between;
+    padding: 2rem 2rem;
+    position: fixed;
+    inset: 0 0 auto 0;
+    align-items: center;
 }
 
 
