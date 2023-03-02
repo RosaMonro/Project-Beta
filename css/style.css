@@ -50,6 +50,7 @@ h1,
 .h1 {
   font-size: 3.6rem;
   font-family: "Lalezar", cursive;
+  font-weight: 400;
 }
 
 @media only screen and (min-width: 613px) {
@@ -74,6 +75,7 @@ h2,
 .h2 {
   font-size: 3.2rem;
   font-family: "Lalezar", cursive;
+  font-weight: 400;
 }
 
 @media only screen and (min-width: 613px) {
@@ -97,7 +99,8 @@ h2,
 h3,
 .h3 {
   font-size: 3rem;
-  font-family: "Maitree", serif;
+  font-family: "Lalezar", cursive;
+  font-weight: 400;
 }
 
 @media only screen and (min-width: 1004px) {
@@ -110,6 +113,7 @@ h4,
 .h4 {
   font-size: 1.8rem;
   font-family: "Maitree", serif;
+  font-weight: 400;
 }
 
 @media only screen and (min-width: 613px) {
@@ -134,6 +138,7 @@ h5,
 .h5 {
   font-size: 1.6rem;
   font-family: "Maitree", serif;
+  font-weight: 400;
 }
 
 @media only screen and (min-width: 950px) {
@@ -155,21 +160,22 @@ h6,
 
 /*---------------------Títulos de la sección  de descripcion de las apps-----------------*/
 .article__title {
-  font-size: 48px;
+  font-size: 4.8rem;
   font-family: "Lalezar", cursive;
   color: var(--color-teal-1);
 }
 
 @media only screen and (min-width: 600px) {
-  .article__title--supersize {
-    font-size: 88px;
+  .article__title {
+    font-size: 8.8rem;
   }
 }
 @media only screen and (min-width: 950px) {
-  .article__title--supersize {
-    font-size: 128px;
+  .article__title {
+    font-size: 12.8rem;
   }
 }
+/*-----------------------------------------------------------*/
 p {
   font-size: 1.6rem;
   font-family: "Maitree", serif;
@@ -236,20 +242,48 @@ p {
   background-color: var(--color-yellow-1);
 }
 
-.card-intro__title,
-.card-intro__subtitle {
-  line-height: 140%;
+.card-intro__title {
+  line-height: 130%;
+}
+
+.card-intro__subitle {
+  line-height: 170%;
 }
 
 /*----------------------------CARACTERÍSTICAS ----------------------*/
 .article {
-  max-width: 1100px;
-  padding-left: 12px;
-  padding-right: 12px;
   margin-left: auto;
   margin-right: auto;
 }
 
+.article__title {
+  text-align: right;
+  margin-right: 50%;
+  margin-bottom: -0.5rem;
+  line-height: 0;
+}
+
+.article__text-bg {
+  background-color: var(--color-teal-2);
+  padding: 30px;
+  margin-left: 10%;
+}
+
+@media only screen and (min-width: 400px) {
+  .article__text-bg {
+    margin-left: 20%;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .article__text-bg {
+    margin-left: 25%;
+  }
+}
+@media only screen and (min-width: 950px) {
+  .article__text-bg {
+    margin-left: 35%;
+  }
+}
 .button__google {
   width: 207px;
   height: 80px;

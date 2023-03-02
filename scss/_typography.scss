@@ -1,22 +1,24 @@
 /*---------------------Títulos de la sección  de descripcion de las apps-----------------*/
 
 .article__title {
-    font-size: 48px;
+    font-size: 4.8rem;
     font-family: 'Lalezar', cursive;
     color: var(--color-teal-1);
 }
 
       @media only screen and (min-width:600px) {
-        .article__title--supersize {
-          font-size: 88px;
+        .article__title {
+          font-size: 8.8rem;
         }
       }
 
       @media only screen and (min-width:950px) {
-        .article__title--supersize {
-          font-size: 128px;
+        .article__title {
+          font-size: 12.8rem;
         }      
       }
+
+      /*-----------------------------------------------------------*/
 
 p {
     font-size: 1.6rem;
