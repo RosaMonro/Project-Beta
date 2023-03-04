@@ -162,20 +162,25 @@ h6,
   font-size: 1.6rem;
 }
 
+/*--------------------SUBTÍTULOS----------------*/
+.subtitle {
+  padding-right: 32%;
+}
+
 /*---------------------Títulos de la sección  de descripcion de las apps-----------------*/
-.article__title {
+.features__title {
   font-size: 4.8rem;
   font-family: "Lalezar", cursive;
   color: var(--color-teal-1);
 }
 
 @media only screen and (min-width: 600px) {
-  .article__title {
+  .features__title {
     font-size: 8.8rem;
   }
 }
 @media only screen and (min-width: 950px) {
-  .article__title {
+  .features__title {
     font-size: 12.8rem;
   }
 }
@@ -228,6 +233,20 @@ p {
   margin: 16px;
 }
 
+/*-------------IMÁGENES OPINIONES -------------*/
+.opinions__samples__img {
+  width: 18rem;
+  height: 18rem;
+  border-radius: 50%;
+  background-color: silver;
+}
+
+/*-----------------------ICONOS--------------------*/
+.link-arrow {
+  width: 15px;
+  height: 15px;
+}
+
 /*-------------------TOPBAR--------------------*/
 .topbar {
   background-color: #fff;
@@ -277,34 +296,34 @@ p {
 }
 
 /*----------------------------CARACTERÍSTICAS ----------------------*/
-.article {
+.features {
   margin-left: auto;
   margin-right: auto;
 }
-.article__title {
+.features__title {
   text-align: right;
   margin-right: 50%;
   margin-bottom: -0.5rem;
   line-height: 0;
 }
-.article__text-bg {
+.features__text-bg {
   background-color: var(--color-teal-2);
   padding: 30px;
   margin-left: 10%;
 }
 
 @media only screen and (min-width: 400px) {
-  .article__text-bg {
+  .features__text-bg {
     margin-left: 20%;
   }
 }
 @media only screen and (min-width: 600px) {
-  .article__text-bg {
+  .features__text-bg {
     margin-left: 25%;
   }
 }
 @media only screen and (min-width: 950px) {
-  .article__text-bg {
+  .features__text-bg {
     margin-left: 35%;
   }
 }
@@ -321,20 +340,48 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 24px;
-  margin: 48px 0;
+  text-align: center;
+  padding: 4% 16%;
+  margin: 4.8rem 0;
 }
 
+/*---------------------OPINIONES------------------------*/
+.opinions {
+  text-align: center;
+  padding: 4% 4%;
+  margin: 4.8rem 0;
+  background-color: var(--color-yellow-2);
+}
+
+.opinions__samples {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3rem;
+}
+
+@media only screen and (min-width: 1040px) {
+  .cta,
+.opinions {
+    margin: 10rem 0;
+  }
+}
 .nav__item-link {
   text-decoration: none;
   color: var(--color-black);
-  font-family: var(--fon-maitree);
+  font-family: var(--font-maitree);
   font-size: 1.6rem;
+}
+
+.link {
+  font-family: var(--font-maitree);
+  font-size: 2rem;
+  color: var(--color-blue);
 }
 
 .cta__link {
   color: var(--color-teal-1);
-  margin: 16px;
+  margin: 16px 0;
 }
 
 .button__google {
