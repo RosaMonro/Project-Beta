@@ -1,38 +1,38 @@
+/*------------------------INTRO AMARILLA---------------------*/
+
 .card-intro {
     padding-top: 4%;
     padding-bottom: 4%;
     padding-left: 8%;
     padding-right: 8%;
     background-color: var(--color-yellow-1);
-}
 
-.card-intro__title {
-    line-height: 130%;
+        &__title {
+        line-height: 130%;
+    }
+        &__subitle {
+        line-height: 170%;
+    }
 }
-
-.card-intro__subitle {
-    line-height: 170%;
-}
-
 /*----------------------------CARACTERÍSTICAS ----------------------*/
 
 .article {
     margin-left: auto;
     margin-right: auto;
-  }
+  
+        &__title {
+        text-align: right;
+        margin-right: 50%;
+        margin-bottom: -0.5rem;
+        line-height: 0;
+    }
 
-  .article__title {
-    text-align: right;
-    margin-right: 50%;
-    margin-bottom: -0.5rem;
-    line-height: 0;
-  }
-
-  .article__text-bg {
-    background-color: var(--color-teal-2);
-    padding: 30px; 
-    margin-left: 10%;
-  }
+        &__text-bg {
+        background-color: var(--color-teal-2);
+        padding: 30px; 
+        margin-left: 10%;
+    }
+}
 
 
   @media only screen and (min-width: 400px) {
@@ -52,3 +52,14 @@
         margin-left: 35%;
     }
   }
+
+/*---------------------CALL TO ACTION---------------------------*/
+
+.cta {
+    background-color: var(--color-yellow-2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 24px;
+    margin: 48px 0;
+}

@@ -14,8 +14,18 @@
     <header class="topbar">
      
                 <a href=""><img  class="topbar__logo--bicolor"  src="/images/logo/logo-bicolor.svg" alt="logotipo de sinaptikapp"></a>
-                <img  class="topbar__burger-icon"  src="/images/iconos/Burger icon.svg" alt="menú" >
-   
+                    
+
+                <div class="topbar__burger"><img  class="topbar__burger-icon"  onclick="toggleMenu()"  src="/images/iconos/Burger icon.svg" alt="menú" >
+                    <ul class="nav">
+                        <li class="nav__item"><a class="nav__item-link" href="">Inicio</a></li>
+                        <li class="nav__item"><a class="nav__item-link" href="">Aplicaciones</a></li>
+                        <li class="nav__item"><a class="nav__item-link" href="">Blog</a></li>
+                        <li class="nav__item"><a class="nav__item-link" href="">Conócenos</a></li>
+                        <li class="nav__item"><a class="nav__item-link" href="">Háblanos</a></li>
+                    </ul>    
+                </div>
+
     </header>
 
     <main>
@@ -67,12 +77,12 @@
 
         <section class="cta">
 
-            <img class="logo__cta--negro" src="" alt="">
+            <img class="logo__cta--negro" src="/images/logo/logo-negro.svg" alt="">
 
             <p>Adquiere todas nuestras aplicaciones en su ersión completa PREMIUM y unas suscripción a nuestra NEWSLETTER
                 para estar al día de nuevos lanzamientos, consejos y mucho más.</p>
 
-            <p>Descarga el pack</p>
+            <p class="h3  cta__link">Descarga el pack</p>
 
             <a href="" target="_blank">
                 <img class="button__google" src="/images/Botones/google.png" alt="Botón con enlace a la playstore">

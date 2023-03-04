@@ -1,4 +1,4 @@
-
+/*-------------------TOPBAR--------------------*/
 .topbar {
     background-color: #fff;
     display: flex;
@@ -10,3 +10,24 @@
 }
 
 
+.nav {
+    display: none;
+    list-style: none;
+    position: absolute;
+    right: 0;
+    width: 10vw;
+    margin-top: 10px;
+  }
+  
+.nav__item {
+    position: relative;
+    padding: 20px 40px;
+    background-color: var(--color-teal-2);
+    border: solid 2px green;
+  }
+  
+// .topbar__burger:hover .nav {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 1px;
+//   }
