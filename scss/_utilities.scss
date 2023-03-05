@@ -1,5 +1,15 @@
-.button__google {
-    width: 207px;
-    height: 80px;
+
+
+.footer__text--white {
+    color: var(--color-white);
 }
 
+.footer__text--teal {
+    color: var(--color-teal-1);
+    margin: .5em 0;
+}
+
+.cta__text {
+    color: var(--color-teal-1);
+    margin: 16px 0;
+}

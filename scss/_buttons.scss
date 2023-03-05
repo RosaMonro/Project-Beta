@@ -1,0 +1,36 @@
+/*-------------------GOOGLE PLAY-------------------*/
+
+.button__google {
+    width: 207px;
+    height: 80px;
+}
+
+/*-------------------BOTÓN FOOTER-----------------*/
+
+.footer__button {
+    width: 92px;
+    height: 45px;
+    border: none;
+    text-decoration: none;
+    border-radius: 8px;
+    background-color: var(--color-yellow-1);
+
+    .footer__button__text {
+        color:var(--color-black);
+        font-family: var(--font-lalezar);
+        margin: 0;
+    }
+
+    & a {
+        text-decoration: none;
+    }
+}
+
+
+
+@media only screen and (min-width: 820px) {
+    .footer__button {
+        width: 154px;
+        height: 67px;
+    }
+}

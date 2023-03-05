@@ -69,16 +69,24 @@
 /*---------------------OPINIONES------------------------*/
 
 .opinions {
+    background-color: var(--color-yellow-2);
+    text-align: center;
     text-align: center;
     padding: 4% 4%;
     margin: 4.8rem 0;
-    background-color: var(--color-yellow-2);
 }
 
 .opinions__samples {
-    display: flex;
-    gap: 3rem;
+    margin: 4rem;
 }
+
+@media only screen and (min-width: 830px) {
+    .opinions__samples {
+        display: flex;
+        gap: 4rem;
+    }
+}
+
 
 @media only screen and (min-width:1040px ) {
     .cta,

@@ -1,18 +1,33 @@
-.nav__item-link {
+.nav__item-link,
+.legal__link {
     text-decoration: none;
     color: var(--color-black);
     font-family: var(--font-maitree);
     font-size: 1.6rem;
 }
 
+.legal__link:hover {
+    font-weight: bold;
+}
+
 .link {
     font-family: var(--font-maitree);
     font-size: 2rem;
     color: var(--color-blue);
+
+    &:hover {
+        .link-arrow {
+            opacity: 100%;
+            transform: translateX(0);
+        }
+    }
 }
 
-.cta__link {
-    color: var(--color-teal-1);
-    margin: 16px 0;
-}
-
+.link-arrow {
+    transform: translateX(-30%); //no muevo el bloque, el bloque se queda donde está porque no modifica el entorno, pero sí modifico el cómo se ve en pantalla//
+    opacity: 0; //para que parezca q no está//
+    transition-delay: 0;
+    transition-duration: 0.4s;
+    transition-property: opacity, transform;
+    transition-timing-function: ease-out;
+  }
