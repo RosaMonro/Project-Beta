@@ -136,6 +136,8 @@ h6,
 
 /*--------------------SUBTÍTULOS----------------*/
 
-.subtitle {
-  padding-right: 32%;
+@media only screen and (min-width: 460px) {
+    .subtitle {
+    padding-right: 25%;
+  }
 }

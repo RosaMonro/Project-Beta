@@ -35,12 +35,12 @@ main {
 
 @media only screen and (min-width: 620px) {
   body {
-    padding: 3rem;
+    padding: 3rem 3rem 0 3rem;
   }
 }
 @media only screen and (min-width: 830px) {
   body {
-    padding: 6rem;
+    padding: 6rem 6rem 0 6rem;
   }
 }
 @media only screen and (min-width: 1038px) {
@@ -163,10 +163,11 @@ h6,
 }
 
 /*--------------------SUBTÍTULOS----------------*/
-.subtitle {
-  padding-right: 32%;
+@media only screen and (min-width: 460px) {
+  .subtitle {
+    padding-right: 25%;
+  }
 }
-
 /*---------------------Títulos de la sección  de descripcion de las apps-----------------*/
 .features__title {
   font-size: 4.8rem;
@@ -217,20 +218,29 @@ p {
           align-items: center;
 }
 
-.nav {
-  display: none;
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   list-style: none;
   position: absolute;
   right: 0;
-  width: 10vw;
-  margin-top: 10px;
+  margin: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1px;
 }
 
-.nav__item {
+.menu__item {
   position: relative;
   padding: 20px 40px;
   background-color: var(--color-teal-2);
-  border: solid 2px green;
+}
+
+.hide {
+  display: none;
 }
 
 /*------------------------INTRO AMARILLA---------------------*/
@@ -248,38 +258,6 @@ p {
   line-height: 170%;
 }
 
-/*----------------------------CARACTERÍSTICAS ----------------------*/
-.features {
-  margin-left: auto;
-  margin-right: auto;
-}
-.features__title {
-  text-align: right;
-  margin-right: 50%;
-  margin-bottom: -0.5rem;
-  line-height: 0;
-}
-.features__text-bg {
-  background-color: var(--color-teal-2);
-  padding: 30px;
-  margin-left: 10%;
-}
-
-@media only screen and (min-width: 400px) {
-  .features__text-bg {
-    margin-left: 20%;
-  }
-}
-@media only screen and (min-width: 600px) {
-  .features__text-bg {
-    margin-left: 25%;
-  }
-}
-@media only screen and (min-width: 950px) {
-  .features__text-bg {
-    margin-left: 35%;
-  }
-}
 /*---------------------CALL TO ACTION---------------------------*/
 .cta {
   background-color: var(--color-yellow-2);
@@ -323,6 +301,38 @@ p {
   .cta,
 .opinions {
     margin: 10rem 0;
+  }
+}
+/*----------------------------CARACTERÍSTICAS ----------------------*/
+.features {
+  margin-left: auto;
+  margin-right: auto;
+}
+.features__title {
+  text-align: right;
+  margin-right: 50%;
+  margin-bottom: -0.5rem;
+  line-height: 0;
+}
+.features__text-bg {
+  background-color: var(--color-teal-2);
+  padding: 30px;
+  margin-left: 10%;
+}
+
+@media only screen and (min-width: 400px) {
+  .features__text-bg {
+    margin-left: 20%;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .features__text-bg {
+    margin-left: 25%;
+  }
+}
+@media only screen and (min-width: 950px) {
+  .features__text-bg {
+    margin-left: 35%;
   }
 }
 .topbar__logo--bicolor {
@@ -414,7 +424,7 @@ p {
     height: 52px;
   }
 }
-.nav__item-link,
+.menu__item-link,
 .legal__link {
   text-decoration: none;
   color: var(--color-black);
