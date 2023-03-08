@@ -335,6 +335,10 @@ p {
     margin-left: 35%;
   }
 }
+.product {
+  margin: 3rem;
+}
+
 .topbar__logo--bicolor {
   width: 130px;
   height: 44px;
@@ -386,6 +390,13 @@ p {
   height: 18rem;
   border-radius: 50%;
   background-color: silver;
+}
+
+/*---------------------IMÁGENES PRODUCTO--------------*/
+/*----Mockups---*/
+.product-mockup {
+  width: 320px;
+  height: 296px;
 }
 
 /*-----------------------ICONOS--------------------*/
