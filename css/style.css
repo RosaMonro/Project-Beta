@@ -20,14 +20,15 @@ html {
 
 /*------------------------------------ MÁRGENES----------------------------------*/
 body {
-  padding: 1rem;
   max-width: 170rem;
   margin-top: 8.7rem;
+  margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
 }
 
 main {
+  padding: 0 1rem;
   max-width: 124rem;
   margin-left: auto;
   margin-right: auto;
@@ -395,8 +396,8 @@ p {
 /*---------------------IMÁGENES PRODUCTO--------------*/
 /*----Mockups---*/
 .product-mockup {
-  width: 320px;
-  height: 296px;
+  width: 30px;
+  height: 96px;
 }
 
 /*-----------------------ICONOS--------------------*/
@@ -415,26 +416,6 @@ p {
   height: 32px;
 }
 
-@media only screen and (min-width: 620px) {
-  .rrss__icon {
-    width: 40px;
-    height: 40px;
-  }
-  .rrss__icon:hover {
-    width: 42px;
-    height: 42px;
-  }
-}
-@media only screen and (min-width: 1275px) {
-  .rrss__icon {
-    width: 50px;
-    height: 50px;
-  }
-  .rrss__iconn:hover {
-    width: 52px;
-    height: 52px;
-  }
-}
 .menu__item-link,
 .legal__link {
   text-decoration: none;
@@ -506,7 +487,7 @@ p {
 }
 .prefooter,
 .social-legal {
-  padding: 2% 4%;
+  padding: 4% 4%;
   text-align: center;
   background-color: var(--color-yellow-1);
 }
@@ -515,11 +496,10 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   gap: 1%;
-  padding: 2% 2%;
+  padding: 8% 2%;
   background-color: var(--color-black);
 }
 .footer-right, .footer-left {
@@ -529,6 +509,11 @@ p {
   text-align: left;
 }
 
+.footer-left,
+.footer-right {
+  width: 50%;
+}
+
 @media only screen and (min-width: 620px) {
   .prefooter {
     padding: 2% 16%;
@@ -536,9 +521,9 @@ p {
   .footer {
     padding: 4.8rem;
   }
-  .footer-right,
-.footer-left {
-    padding: 2% 8%;
+  .footer-left,
+.footer-right {
+    width: 50%;
   }
   .social-legal {
     display: -webkit-box;
@@ -547,6 +532,7 @@ p {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding: 2% 4%;
   }
 }
 @media only screen and (min-width: 1275px) {
@@ -556,13 +542,10 @@ p {
   .footer {
     padding: 10rem;
   }
-  .footer-right,
-.footer-left {
-    padding: 2% 12%;
-  }
 }
 .footer__text--white {
   color: var(--color-white);
+  text-align: center;
 }
 
 .footer__text--teal {
