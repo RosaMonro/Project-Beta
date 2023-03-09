@@ -1,10 +1,19 @@
-.menu__item-link,
+.menu__item-link {
+    text-decoration: none;
+    color: var(--color-black);
+    font-family: var(--font-lalezar);
+    font-size: 2.4rem;
+}
+
 .legal__link {
     text-decoration: none;
     color: var(--color-black);
     font-family: var(--font-maitree);
     font-size: 1.6rem;
 }
+
+
+
 
 .legal__link:hover {
     font-weight: bold;
@@ -14,6 +23,7 @@
     font-family: var(--font-maitree);
     font-size: 2rem;
     color: var(--color-blue);
+    margin: 1em;
 
     &:hover {
         .link-arrow {

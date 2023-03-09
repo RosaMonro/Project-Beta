@@ -16,15 +16,17 @@
     position: absolute;
     right: 0;
     margin: 20px;
+    padding: 0;
+    // border: solid 2px;
+    box-shadow: 2px 2px 5px .5px var(--color-black);
     flex-direction: column;
-    gap: 1px;
   }
   
 .menu__item {
     position: relative;
-    padding: 20px 40px;
-    background-color: var(--color-teal-2);
-    // border: solid 2px green;
+
+    padding: 35px 150px;
+    background-color: var(--color-white);
   }
   
 .hide {
