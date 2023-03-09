@@ -17,9 +17,10 @@
     right: 0;
     margin: 20px;
     padding: 0;
-    // border: solid 2px;
-    box-shadow: 2px 2px 5px .5px var(--color-black);
+    border: solid 3px var(--color-yellow-1);
+    // box-shadow: 2px 2px 5px .5px var(--color-black);
     flex-direction: column;
+
   }
   
 .menu__item {

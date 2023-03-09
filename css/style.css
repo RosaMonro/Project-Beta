@@ -35,17 +35,17 @@ main {
 }
 
 @media only screen and (min-width: 620px) {
-  body {
+  main {
     padding: 3rem 3rem 0 3rem;
   }
 }
 @media only screen and (min-width: 830px) {
-  body {
+  main {
     padding: 6rem 6rem 0 6rem;
   }
 }
 @media only screen and (min-width: 1038px) {
-  body {
+  main {
     padding-left: 10rem;
     padding-right: 10rem;
   }
@@ -223,8 +223,7 @@ p {
   right: 0;
   margin: 20px;
   padding: 0;
-  -webkit-box-shadow: 2px 2px 5px 0.5px var(--color-black);
-          box-shadow: 2px 2px 5px 0.5px var(--color-black);
+  border: solid 3px var(--color-yellow-1);
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -336,7 +335,6 @@ p {
 .product {
   margin: 9em 2em 12em 2em;
 }
-
 .product__links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -347,7 +345,6 @@ p {
           flex-direction: column;
   text-align: center;
 }
-
 .product__nexos--reverse {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -358,7 +355,7 @@ p {
           flex-direction: column-reverse;
 }
 
-/*-- Aparición/desaparición del título según resolución--*/
+/*-- Aparición/desaparición del título y links según resolución--*/
 .title-hidden-desktop {
   display: none;
 }
@@ -483,8 +480,10 @@ p {
 
 /*-----------------------ICONOS--------------------*/
 .link-arrow {
-  width: 15px;
-  height: 15px;
+  margin: -5px;
+  margin-left: 5px;
+  width: 25px;
+  height: 25px;
 }
 
 .rrss__icon {
@@ -516,6 +515,7 @@ p {
 }
 
 .link {
+  text-decoration: none;
   font-family: var(--font-maitree);
   font-size: 2rem;
   color: var(--color-blue);
@@ -642,6 +642,6 @@ p {
 }
 
 .cta__text {
-  color: var(--color-teal-1);
+  color: var(--color-black);
   margin: 16px 0;
 }

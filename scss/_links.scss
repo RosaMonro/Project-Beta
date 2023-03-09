@@ -13,13 +13,12 @@
 }
 
 
-
-
 .legal__link:hover {
     font-weight: bold;
 }
 
 .link {
+    text-decoration: none;
     font-family: var(--font-maitree);
     font-size: 2rem;
     color: var(--color-blue);

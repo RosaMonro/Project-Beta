@@ -1,20 +1,21 @@
 .product {
     margin: 9em 2em 12em 2em;
+
+        &__links {
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        }
+
+        &__nexos--reverse {
+            display: flex;
+            flex-direction: column-reverse;
+        }
 }
 
-.product__links {
-    display:flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.product__nexos--reverse {
-    display: flex;
-    flex-direction: column-reverse;
-}
 
 
-/*-- Aparición/desaparición del título según resolución--*/
+/*-- Aparición/desaparición del título y links según resolución--*/
 
 
 .title-hidden-desktop {
@@ -24,6 +25,8 @@
 .links-visible1275px {
     display: none;
 }
+
+
 
 @media only screen and (min-width: 725px) {
     .product__secuencial,
