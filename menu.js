@@ -1,6 +1,4 @@
 
-console.log('hola');
-
 //Función que se lanza al hacer click
 function toggleMenu() {
     menu.classList.toggle('hide');

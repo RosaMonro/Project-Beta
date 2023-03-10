@@ -641,7 +641,12 @@ p {
   margin: 0.5em 0;
 }
 
-.cta__text {
+.cta__text--black {
   color: var(--color-black);
+  margin: 16px 0;
+}
+
+.cta__text--teal {
+  color: var(--color-teal-1);
   margin: 16px 0;
 }
