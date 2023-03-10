@@ -1,9 +1,17 @@
 /*-------------------GOOGLE PLAY-------------------*/
 
 .button__google {
-    width: 207px;
-    height: 80px;
+    width: 153px;
+    height: 60px;
 }
+
+@media only screen and (min-width: 820px) {
+    .button__google {
+        width: 207px;
+        height: 80px;
+    }
+}
+
 
 /*-------------------BOTÓN FOOTER-----------------*/
 

@@ -166,6 +166,7 @@ h6,
 /*--------------------SUBTÍTULOS----------------*/
 @media only screen and (min-width: 460px) {
   .subtitle {
+    padding-left: 1em;
     padding-right: 25%;
   }
 }
@@ -333,7 +334,7 @@ p {
   }
 }
 .product {
-  margin: 9em 2em 12em 2em;
+  margin: 6em 2em 6em 2em;
 }
 .product__links {
   display: -webkit-box;
@@ -344,8 +345,9 @@ p {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  margin-bottom: 6rem;
 }
-.product__nexos--reverse {
+.product__secondDescription--reverse {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -365,8 +367,11 @@ p {
 }
 
 @media only screen and (min-width: 725px) {
-  .product__secuencial,
-.product__nexos--reverse {
+  .product {
+    margin: 9em 2em 9em 2em;
+  }
+  .product__firstDescription,
+.product__secondDescription--reverse {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -545,10 +550,16 @@ p {
 
 /*-------------------GOOGLE PLAY-------------------*/
 .button__google {
-  width: 207px;
-  height: 80px;
+  width: 153px;
+  height: 60px;
 }
 
+@media only screen and (min-width: 820px) {
+  .button__google {
+    width: 207px;
+    height: 80px;
+  }
+}
 /*-------------------BOTÓN FOOTER-----------------*/
 .footer__button {
   width: 92px;
@@ -649,4 +660,8 @@ p {
 .cta__text--teal {
   color: var(--color-teal-1);
   margin: 16px 0;
+}
+
+.title-product {
+  text-align: center;
 }
