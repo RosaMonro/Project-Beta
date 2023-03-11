@@ -2,7 +2,12 @@
     text-decoration: none;
     color: var(--color-white);
     font-family: var(--font-lalezar);
+
+        &:hover {
+            font-style: italic;
+        }
 }
+
 
 .legal__link {
     text-decoration: none;

@@ -21,7 +21,7 @@ html {
 /*------------------------------------ MÁRGENES----------------------------------*/
 body {
   max-width: 170rem;
-  margin-top: 8.7rem;
+  margin-top: 95px;
   margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
@@ -213,6 +213,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 1;
 }
 
 .menu {
@@ -224,11 +225,14 @@ p {
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   list-style: none;
   right: 0;
   height: 100vh;
   width: 100vw;
-  text-align: center;
   background-color: var(--color-yellow-1);
   opacity: 0.95;
 }
@@ -447,7 +451,7 @@ p {
     gap: 6%;
   }
   .product__mockup,
-.product__text {
+.blog__image {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -458,6 +462,17 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 50%;
+  }
+  .product__text,
+.blog__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 50%;
   }
   .product__mockup {
@@ -570,6 +585,9 @@ p {
   text-decoration: none;
   color: var(--color-white);
   font-family: var(--font-lalezar);
+}
+.menu__item-link:hover {
+  font-style: italic;
 }
 
 .legal__link {
