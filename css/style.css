@@ -270,6 +270,45 @@ p {
   margin: 4.8rem 0;
 }
 
+/*---------------------SUMARY-CARDS--------------------------*/
+.catalog-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1em;
+  margin: 4.8rem 0;
+}
+
+@media only screen and (min-width: 620px) {
+  .catalog-cards {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 10rem 0;
+  }
+}
+.summary-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 2em;
+  border: solid 1px var(--color-black);
+}
+
+.summary-card__text {
+  text-align: left;
+}
+
 /*---------------------OPINIONES------------------------*/
 .opinions {
   background-color: var(--color-yellow-2);
@@ -476,6 +515,11 @@ p {
 /*----Mockups---*/
 .mockup {
   width: 100%;
+  height: auto;
+}
+
+.mockup--mini {
+  width: 272px;
   height: auto;
 }
 

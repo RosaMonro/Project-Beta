@@ -28,6 +28,37 @@
     margin: 4.8rem 0;
 }
 
+/*---------------------SUMARY-CARDS--------------------------*/
+
+
+
+
+.catalog-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 4.8rem 0;
+}
+
+@media only screen and (min-width: 620px) {
+        .catalog-cards {
+            flex-direction: row;
+            margin: 10rem 0;
+        }
+    }
+
+
+.summary-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2em;
+    border: solid 1px var(--color-black);
+}
+
+.summary-card__text {
+    text-align: left;
+}
 
 /*---------------------OPINIONES------------------------*/
 
