@@ -270,6 +270,35 @@ p {
   margin: 4.8rem 0;
 }
 
+/*-------------------------POST--------------------------*/
+.card__last-post {
+  padding: 4em;
+  background-color: var(--color-teal-2);
+}
+
+.last-post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4em;
+}
+
+@media only screen and (min-width: 775px) {
+  .last-post {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 4em;
+  }
+}
 /*---------------------SUMARY-CARDS--------------------------*/
 .catalog-cards {
   display: -webkit-box;
@@ -279,6 +308,9 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 1em;
   margin: 4.8rem 0;
 }
@@ -304,7 +336,6 @@ p {
   padding: 2em;
   border: solid 1px var(--color-black);
 }
-
 .summary-card__text {
   text-align: left;
 }
@@ -317,7 +348,6 @@ p {
   padding: 4% 4%;
   margin: 4.8rem 0;
 }
-
 .opinions__samples {
   margin: 4rem;
 }
@@ -518,11 +548,6 @@ p {
   height: auto;
 }
 
-.mockup--mini {
-  width: 272px;
-  height: auto;
-}
-
 /*-----------------------ICONOS--------------------*/
 .link-arrow {
   margin: -5px;
@@ -563,7 +588,7 @@ p {
   font-family: var(--font-maitree);
   font-size: 2rem;
   color: var(--color-blue);
-  margin: 1em;
+  margin: 1em 0;
 }
 .link:hover .link-arrow {
   opacity: 100%;

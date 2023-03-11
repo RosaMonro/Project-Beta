@@ -27,15 +27,36 @@
     padding: 4% 16%;
     margin: 4.8rem 0;
 }
+/*-------------------------POST--------------------------*/
+
+.card__last-post {
+    padding: 4em;
+    background-color: var(--color-teal-2);
+}
+
+
+
+.last-post {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+}
+
+@media only screen and (min-width: 775px) {
+    .last-post {
+        display: flex;
+        flex-direction: row;
+        gap: 4em;
+    }
+}
+
 
 /*---------------------SUMARY-CARDS--------------------------*/
-
-
-
 
 .catalog-cards {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 1em;
     margin: 4.8rem 0;
 }
@@ -54,11 +75,13 @@
     text-align: center;
     padding: 2em;
     border: solid 1px var(--color-black);
+
+        &__text {
+            text-align: left;
+        }
 }
 
-.summary-card__text {
-    text-align: left;
-}
+
 
 /*---------------------OPINIONES------------------------*/
 
@@ -68,11 +91,13 @@
     text-align: center;
     padding: 4% 4%;
     margin: 4.8rem 0;
+
+        &__samples {
+            margin: 4rem;
+        }
 }
 
-.opinions__samples {
-    margin: 4rem;
-}
+
 
 @media only screen and (min-width: 830px) {
     .opinions__samples {
