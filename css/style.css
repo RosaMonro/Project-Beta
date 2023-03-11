@@ -291,7 +291,7 @@ p {
   gap: 4em;
 }
 
-@media only screen and (min-width: 775px) {
+@media only screen and (min-width: 725px) {
   .last-post {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -563,6 +563,13 @@ p {
   height: auto;
 }
 
+/*-----------------IMAÁGENES ENTRADAS BLOG---------------*/
+.single__image {
+  width: 100%;
+  height: auto;
+  margin: 3rem 0;
+}
+
 /*-----------------------ICONOS--------------------*/
 .link-arrow {
   margin: -5px;
@@ -601,19 +608,6 @@ p {
   font-weight: bold;
 }
 
-.link {
-  text-decoration: none;
-  font-family: var(--font-maitree);
-  font-size: 2rem;
-  color: var(--color-blue);
-  margin: 1em 0;
-}
-.link:hover .link-arrow {
-  opacity: 100%;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-}
-
 .link-arrow {
   -webkit-transform: translateX(-30%);
           transform: translateX(-30%);
@@ -628,6 +622,19 @@ p {
   transition-property: opacity, transform, -webkit-transform;
   -webkit-transition-timing-function: ease-out;
           transition-timing-function: ease-out;
+}
+
+.link {
+  text-decoration: none;
+  font-family: var(--font-maitree);
+  font-size: 2rem;
+  color: var(--color-blue);
+  margin: 1em 0;
+}
+.link:hover .link-arrow {
+  opacity: 100%;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 /*-------------------GOOGLE PLAY-------------------*/
@@ -746,4 +753,9 @@ p {
 
 .title-product {
   text-align: center;
+}
+
+.background-section {
+  background-color: var(--color-teal-2);
+  padding: 6rem 3em;
 }
