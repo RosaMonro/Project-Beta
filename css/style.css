@@ -378,6 +378,66 @@ p,
     margin: 10rem 0;
   }
 }
+/*--------------------------------ABOUT-------------------------------*/
+.profile-card {
+  margin: 6em 0;
+  position: relative;
+}
+
+.profile-info {
+  text-align: center;
+}
+
+@media only screen and (min-width: 660px) {
+  .profile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .profile-info {
+    text-align: center;
+    width: 50%;
+  }
+}
+.profile__bg--teal {
+  position: absolute;
+  z-index: -1;
+  background-color: var(--color-teal-2);
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  left: 25%;
+}
+
+.profile__bg--yellow {
+  position: absolute;
+  z-index: -1;
+  background-color: var(--color-yellow-2);
+  width: 330px;
+  height: 330px;
+  border-radius: 50%;
+  left: 25%;
+}
+
+@media only screen and (min-width: 660px) {
+  .profile__bg--teal,
+.profile__bg--yellow {
+    left: 0;
+  }
+}
+@media only screen and (min-width: 950px) {
+  .profile__bg--teal,
+.profile__bg--yellow {
+    width: 450px;
+    height: 450px;
+    top: 0;
+    left: 0;
+  }
+}
 /*----------------------------CARACTERÍSTICAS ----------------------*/
 .features {
   margin-left: auto;
@@ -586,7 +646,7 @@ p,
   margin: 1em 0;
 }
 
-/*-----------------IMAÁGENES ENTRADAS BLOG---------------*/
+/*-----------------IMÁGENES ENTRADAS BLOG---------------*/
 .single__image {
   width: 100%;
   height: auto;
@@ -609,6 +669,11 @@ p,
 .rrss__icon:hover {
   width: 32px;
   height: 32px;
+}
+
+.profile__icon {
+  width: 99px;
+  height: 95px;
 }
 
 .menu__item-link {
@@ -784,7 +849,9 @@ form > textarea {
 }
 
 textarea:active {
+  border-radius: 5px;
   border: none;
+  border-bottom: 2px solid var(--color-teal-1);
 }
 
 .prefooter,
