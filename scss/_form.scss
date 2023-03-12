@@ -1,0 +1,56 @@
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 15px 0;
+}
+
+
+.form {
+    padding: 4em;
+    background-color: var(--color-teal-2);}
+
+
+label {
+    margin: 0 1em;
+}
+
+
+form > input,
+form > textarea {
+    height: 3em;
+    margin: 1em;
+    font-family: var(--font-maitree);
+    font-size: 1.6rem;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 2px solid var(--color-teal-1);
+    background-color: var(--color-teal-2);    
+}
+
+
+.textarea {
+    height: 6em;
+}
+
+
+
+@media only screen and (min-width: 612px) {
+    form > input,
+    form > textarea {
+        width: 80%;
+    }
+}
+
+
+.button-submit {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+textarea:active {
+    border:none;
+}

@@ -34,11 +34,38 @@
     }
 }
 
-
-
 @media only screen and (min-width: 820px) {
     .footer__button {
         width: 154px;
         height: 67px;
     }
 }
+
+/*---------------BOTÓN FORMULARIO------------*/
+
+[type="submit"] {
+    width: 92px;
+    height: 45px;
+    margin: 1.5em;
+    border: none;
+    text-decoration: none;
+    border-radius: 8px;
+    background-color: var(--color-teal-1);
+    color:var(--color-teal-2);
+    font-family: var(--font-lalezar);
+    letter-spacing: 1px;
+
+    &:hover {
+        background-color: var(--color-teal-2);
+        color: var(--color-teal-1);
+        border: var(--color-teal-1) 0.3rem solid;
+      }
+}
+
+@media only screen and (min-width: 820px) {
+    [type="submit"] {
+        width: 154px;
+        height: 67px;
+    }
+}
+

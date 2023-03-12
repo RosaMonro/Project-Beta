@@ -163,6 +163,12 @@ h6,
   font-size: 1.6rem;
 }
 
+@media only screen and (min-width: 820px) {
+  h6,
+.h6 {
+    font-size: 2rem;
+  }
+}
 /*--------------------SUBTÍTULOS----------------*/
 @media only screen and (min-width: 460px) {
   .subtitle {
@@ -188,7 +194,8 @@ h6,
   }
 }
 /*-----------------------------------------------------------*/
-p {
+p,
+.p {
   font-size: 1.6rem;
   font-family: "Maitree", serif;
 }
@@ -653,6 +660,12 @@ p {
           transform: translateX(0);
 }
 
+.link-priv {
+  color: var(--color-teal-1);
+  font-family: var(--font-maitree);
+  font-size: 1.6rem;
+}
+
 /*-------------------GOOGLE PLAY-------------------*/
 .button__google {
   width: 153px;
@@ -689,6 +702,91 @@ p {
     height: 67px;
   }
 }
+/*---------------BOTÓN FORMULARIO------------*/
+[type=submit] {
+  width: 92px;
+  height: 45px;
+  margin: 1.5em;
+  border: none;
+  text-decoration: none;
+  border-radius: 8px;
+  background-color: var(--color-teal-1);
+  color: var(--color-teal-2);
+  font-family: var(--font-lalezar);
+  letter-spacing: 1px;
+}
+[type=submit]:hover {
+  background-color: var(--color-teal-2);
+  color: var(--color-teal-1);
+  border: var(--color-teal-1) 0.3rem solid;
+}
+
+@media only screen and (min-width: 820px) {
+  [type=submit] {
+    width: 154px;
+    height: 67px;
+  }
+}
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  margin: 15px 0;
+}
+
+.form {
+  padding: 4em;
+  background-color: var(--color-teal-2);
+}
+
+label {
+  margin: 0 1em;
+}
+
+form > input,
+form > textarea {
+  height: 3em;
+  margin: 1em;
+  font-family: var(--font-maitree);
+  font-size: 1.6rem;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 2px solid var(--color-teal-1);
+  background-color: var(--color-teal-2);
+}
+
+.textarea {
+  height: 6em;
+}
+
+@media only screen and (min-width: 612px) {
+  form > input,
+form > textarea {
+    width: 80%;
+  }
+}
+.button-submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+textarea:active {
+  border: none;
+}
+
 .prefooter,
 .social-legal {
   padding: 4% 4%;
@@ -769,4 +867,9 @@ p {
 
 .title-product {
   text-align: center;
+}
+
+.label-color {
+  color: var(--color-teal-1);
+  font-weight: 700;
 }
