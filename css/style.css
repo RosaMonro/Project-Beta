@@ -230,11 +230,12 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
   list-style: none;
+  margin: 25px 0;
   right: 0;
   height: 100vh;
   width: 100vw;
   background-color: var(--color-yellow-1);
-  opacity: 0.95;
+  opacity: 0.97;
 }
 
 .hide {
@@ -503,6 +504,20 @@ p {
     display: none;
   }
 }
+.single {
+  padding-top: 4%;
+  padding-bottom: 4%;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+.single__title {
+  line-height: 130%;
+  color: var(--color-teal-1);
+}
+.single__subitle {
+  line-height: 170%;
+}
+
 .topbar__logo--bicolor {
   width: 130px;
   height: 44px;
@@ -561,6 +576,7 @@ p {
 .mockup {
   width: 100%;
   height: auto;
+  margin: 1em 0;
 }
 
 /*-----------------IMAÁGENES ENTRADAS BLOG---------------*/
@@ -753,9 +769,4 @@ p {
 
 .title-product {
   text-align: center;
-}
-
-.background-section {
-  background-color: var(--color-teal-2);
-  padding: 6rem 3em;
 }

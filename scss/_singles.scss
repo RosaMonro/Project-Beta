@@ -1,0 +1,17 @@
+
+.single {
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 8%;
+    padding-right: 8%;
+
+
+        &__title {
+        line-height: 130%;
+        color: var(--color-teal-1);
+
+        }
+        &__subitle {
+        line-height: 170%;
+        }
+}
