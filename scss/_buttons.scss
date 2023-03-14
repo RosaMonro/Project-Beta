@@ -19,11 +19,10 @@
     width: 92px;
     height: 45px;
     border: none;
-    text-decoration: none;
     border-radius: 8px;
     background-color: var(--color-yellow-1);
 
-    .footer__button__text {
+    &__text {
         color:var(--color-black);
         font-family: var(--font-lalezar);
         margin: 0;
@@ -31,6 +30,10 @@
 
     & a {
         text-decoration: none;
+    }
+
+    &:hover {
+        background-color: var(--color-yellow-2);
     }
 }
 

@@ -4,13 +4,14 @@ form {
     display: flex;
     flex-direction: column;
     text-align: left;
-    margin: 15px 0;
 }
 
 
 .form {
     padding: 4em;
-    background-color: var(--color-teal-2);}
+    margin-bottom: 10rem;
+    background-color: var(--color-teal-2);
+}
 
 
 label {

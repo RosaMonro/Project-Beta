@@ -9,18 +9,6 @@
 }
 
 
-.legal__link {
-    text-decoration: none;
-    color: var(--color-black);
-    font-family: var(--font-maitree);
-    font-size: 1.6rem;
-}
-
-
-.legal__link:hover {
-    font-weight: bold;
-}
-
 .link-arrow {
     transform: translateX(-30%); //no muevo el bloque, el bloque se queda donde está porque no modifica el entorno, pero sí modifico el cómo se ve en pantalla//
     opacity: 0; //para que parezca q no está//
@@ -29,6 +17,7 @@
     transition-property: opacity, transform;
     transition-timing-function: ease-out;
   }
+
 
 .link {
     text-decoration: none;
@@ -44,6 +33,27 @@
         }
     }
 }
+
+
+.footer__contact-link {
+    text-decoration: none;
+    color: var(--color-teal-1);
+    margin: .5em 0;
+}
+
+
+.legal__link {
+    text-decoration: none;
+    color: var(--color-black);
+    font-family: var(--font-maitree);
+    font-size: 1.6rem;
+}
+
+
+.legal__link:hover {
+    font-weight: bold;
+}
+
 
 .link-priv {
     color: var(--color-teal-1);

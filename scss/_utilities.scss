@@ -5,11 +5,6 @@
     text-align: center;
 }
 
-.footer__text--teal {
-    color: var(--color-teal-1);
-    margin: .5em 0;
-}
-
 .cta__text--black {
     color: var(--color-black);
     margin: 16px 0;
@@ -27,4 +22,45 @@
 .label-color {
     color: var(--color-teal-1);
     font-weight: 700;
+}
+
+/*----------------Elemento absolute ABOUT-----------------*/
+
+.profile__bg--teal {
+    position: absolute;
+    z-index: -1;
+    background-color: var(--color-teal-2);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.profile__bg--yellow {
+    position: absolute;
+    z-index: -1;
+    background-color: var(--color-yellow-2);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    // left: 25%;
+}
+
+
+
+@media only screen and (min-width: 410px) {
+    .profile__bg--teal,
+    .profile__bg--yellow {
+        width: 330px;
+        height: 330px
+    }
+}
+
+@media only screen and (min-width: 950px) {
+    .profile__bg--teal,
+    .profile__bg--yellow {
+        width: 450px;
+        height: 450px;
+        top: 0;
+        left:0;
+    }
 }
