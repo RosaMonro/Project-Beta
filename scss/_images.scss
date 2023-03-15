@@ -1,54 +1,54 @@
 //--------------------IMÁGENES NAV------------------//
 
 .topbar__logo--bicolor {
-    width: 130px;
-    height: 44px;
+    width: 13rem;
+    height: 4.4rem;
 }
 
 .topbar__burger-icon {
-    width: 36px;
-    height: 24px;
+    width: 3.6rem;
+    height: 2.4rem;
 }
 
 @media only screen and (min-width: 1040px) {
     .topbar__logo--bicolor {
-        width: 200px;
-        height: 52px;
+        width: 20rem;
+        height: 5.2rem;
     }
 }
 
 @media only screen and (min-width: 1500px) {
     .topbar__logo--bicolor {
-        width: 260px;
-        height: 69px;
+        width: 26rem;
+        height: 6.9rem;
     }
 }
 
 //------------------IMÁGENES FOOTER----------//
 
 .logo--amarillo {
-    width: 143px;
-    height: 39.1px;
+    width: 14.3rem;
+    height: 3.91rem;
 }
 
 @media only screen and (min-width: 830px) {
     .logo--amarillo {
-        width: 285px;
-        height: 95px;
+        width: 28.5rem;
+        height: 9.5rem;
     }
 }
 
 @media only screen and (min-width: 1140px) {
     .logo--amarillo {
-        width: 395px;
-        height: 133px;
+        width: 39.5rem;
+        height: 13.3rem;
     }
 }
 
 .logo__cta--negro {
-    width: 310px;
-    height: 130px;
-    margin: 16px;
+    width: 31rem;
+    height: 13rem;
+    margin: 1.6rem;
 }
 
 /*-------------IMÁGENES OPINIONES -------------*/
@@ -81,24 +81,24 @@
 /*-----------------------ICONOS--------------------*/
 
 .link-arrow {
-    margin: -5px;
-    margin-left: 5px;
-    width: 25px;
-    height: 25px;
+    margin: -.5rem;
+    margin-left: .5rem;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 .rrss__icon {
-    width: 30px;
-    height: 30px;
-    margin: 0 2px;
+    width: 3rem;
+    height: 3rem;
+    margin: 0 .2rem;
 
     &:hover {
-        width: 32px;
-        height: 32px;
+        width: 3.2rem;
+        height: 3.2rem;
     }
 }
 
 .profile__icon {
-    width: 99px;
-    height: 95px;
+    width: 9.9rem;
+    height: 9.5rem;
 }

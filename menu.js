@@ -5,7 +5,7 @@ function toggleMenu() {
 }
 
 //elemento que quiero mostrar/ocultar
-const menu = document.querySelector('.menu');
+const menu = document.querySelector('.burger-menu');
 
 //elemento que dispara la acción
 const btn = document.querySelector('.btn');
