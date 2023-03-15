@@ -1,74 +1,73 @@
-/*-------------------GOOGLE PLAY-------------------*/
-
-.button__google {
-    width: 153px;
-    height: 60px;
-}
-
-@media only screen and (min-width: 820px) {
-    .button__google {
-        width: 207px;
-        height: 80px;
-    }
-}
 
 
-/*-------------------BOTÓN FOOTER-----------------*/
 
-.footer__button {
-    width: 92px;
-    height: 45px;
-    border: none;
-    border-radius: 8px;
-    background-color: var(--color-yellow-1);
+.button {
+    
+    &--form {
+    /*--------------BOTÓN FORMULARIO------------*/
 
-    &__text {
-        color:var(--color-black);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        height: 45px;
+        padding: 0 2em;
+        margin: 1.5em;
+
+        border: none;
+        border-radius: 8px;
+
         font-family: var(--font-lalezar);
-        margin: 0;
+        letter-spacing: 1px;
+        background-color: var(--color-teal-1);
+        color:var(--color-teal-2);
+
+        &:hover {
+            background-color: var(--color-teal-2);
+            color: var(--color-teal-1);
+            border: var(--color-teal-1) 0.3rem solid;
+        }
     }
 
-    a {
-        text-decoration: none;
-    }
+    &--footer {
+    /*--------------BOTÓN SUSCRIPCIÓN FOOTER------------*/
 
-    &:hover {
-        background-color: var(--color-yellow-2);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        height: 45px;
+        padding: 0 2em;
+        margin: 1.5em;
+
+        border: none;
+        border-radius: 8px;
+
+        font-family: var(--font-lalezar);
+        letter-spacing: 1px;
+        background-color: var(--color-yellow-1);
+        color:var(--color-black);
+
+        &:hover {
+            background-color: var(--color-yellow-2);
+            color: var(--color-black);
+            border: var(--color-yellow-2) 0.3rem solid;
+            }
     }
 }
 
+
+
+
 @media only screen and (min-width: 820px) {
-    .footer__button {
-        width: 154px;
+    .button-submit {
         height: 67px;
     }
 }
 
-/*---------------BOTÓN FORMULARIO------------*/
-
-[type="submit"] {
-    width: 92px;
-    height: 45px;
-    margin: 1.5em;
-    border: none;
-    text-decoration: none;
-    border-radius: 8px;
-    background-color: var(--color-teal-1);
-    color:var(--color-teal-2);
-    font-family: var(--font-lalezar);
-    letter-spacing: 1px;
-
-    &:hover {
-        background-color: var(--color-teal-2);
-        color: var(--color-teal-1);
-        border: var(--color-teal-1) 0.3rem solid;
-      }
-}
 
 @media only screen and (min-width: 820px) {
-    [type="submit"] {
-        width: 154px;
+    .footer__button--footer {
         height: 67px;
     }
 }
-

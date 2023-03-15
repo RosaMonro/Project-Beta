@@ -23,6 +23,18 @@
         height: 6.9rem;
     }
 }
+/*-------------IMAGEN BOTÓN GOOGLE PLAY-------------*/
+
+.button--google {
+    width: 153px;
+}
+
+@media only screen and (min-width: 820px) {
+    .button__google {
+        width: 207px;
+        height: 80px;
+    }
+}
 
 //------------------IMÁGENES FOOTER----------//
 

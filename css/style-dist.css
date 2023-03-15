@@ -597,17 +597,6 @@ p,
     height: 6.9rem;
   }
 }
-/*-------------IMAGEN BOTÓN GOOGLE PLAY-------------*/
-.button--google {
-  width: 153px;
-}
-
-@media only screen and (min-width: 820px) {
-  .button__google {
-    width: 207px;
-    height: 80px;
-  }
-}
 .logo--amarillo {
   width: 14.3rem;
   height: 3.91rem;
@@ -738,72 +727,69 @@ p,
   font-size: 1.6rem;
 }
 
-.button--form {
-  /*--------------BOTÓN FORMULARIO------------*/
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+/*-------------------GOOGLE PLAY-------------------*/
+.button__google {
+  width: 153px;
+  height: 60px;
+}
+
+@media only screen and (min-width: 820px) {
+  .button__google {
+    width: 207px;
+    height: 80px;
+  }
+}
+/*-------------------BOTÓN FOOTER-----------------*/
+.footer__button {
+  width: 92px;
   height: 45px;
-  padding: 0 2em;
-  margin: 1.5em;
   border: none;
   border-radius: 8px;
+  background-color: var(--color-yellow-1);
+}
+.footer__button__text {
+  color: var(--color-black);
   font-family: var(--font-lalezar);
-  letter-spacing: 1px;
+  margin: 0;
+}
+.footer__button a {
+  text-decoration: none;
+}
+.footer__button:hover {
+  background-color: var(--color-yellow-2);
+}
+
+@media only screen and (min-width: 820px) {
+  .footer__button {
+    width: 154px;
+    height: 67px;
+  }
+}
+/*---------------BOTÓN FORMULARIO------------*/
+[type=submit] {
+  width: 92px;
+  height: 45px;
+  margin: 1.5em;
+  border: none;
+  text-decoration: none;
+  border-radius: 8px;
   background-color: var(--color-teal-1);
   color: var(--color-teal-2);
+  font-family: var(--font-lalezar);
+  letter-spacing: 1px;
 }
-.button--form:hover {
+[type=submit]:hover {
   background-color: var(--color-teal-2);
   color: var(--color-teal-1);
   border: var(--color-teal-1) 0.3rem solid;
 }
-.button--footer {
-  /*--------------BOTÓN SUSCRIPCIÓN FOOTER------------*/
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 45px;
-  padding: 0 2em;
-  margin: 1.5em;
-  border: none;
-  border-radius: 8px;
-  font-family: var(--font-lalezar);
-  letter-spacing: 1px;
-  background-color: var(--color-yellow-1);
-  color: var(--color-black);
-}
-.button--footer:hover {
-  background-color: var(--color-yellow-2);
-  color: var(--color-black);
-  border: var(--color-yellow-2) 0.3rem solid;
-}
 
 @media only screen and (min-width: 820px) {
-  .button-submit {
+  [type=submit] {
+    width: 154px;
     height: 67px;
   }
 }
-@media only screen and (min-width: 820px) {
-  .footer__button--footer {
-    height: 67px;
-  }
-}
-/*------------------FORMULARIO DE CONTACTO--------------*/
 form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -813,10 +799,9 @@ form {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: left;
-  color: var(--color-teal-1);
 }
 
-.contact {
+.form {
   padding: 4em;
   margin-bottom: 10rem;
   background-color: var(--color-teal-2);
@@ -826,9 +811,8 @@ label {
   margin: 0 1em;
 }
 
-input[type=text],
-input[type=email],
-textarea {
+form > input,
+form > textarea {
   height: 3em;
   margin: 1em;
   font-family: var(--font-maitree);
@@ -837,32 +821,37 @@ textarea {
   border: none;
   border-bottom: 2px solid var(--color-teal-1);
   background-color: var(--color-teal-2);
-  /*-------------INPUT SUSCRIPCIÓN NEWSLETTER------------*/
 }
-input[type=text]:focus,
-input[type=email]:focus,
-textarea:focus {
-  border-radius: 5px;
-  outline: none;
-  border-bottom: 2px solid var(--color-teal-1);
-}
-input[type=text].input--footer,
-input[type=email].input--footer,
-textarea.input--footer {
-  height: 2em;
-  width: 80%;
-  border-bottom: 2px solid var(--color-yellow-1);
-  background-color: var(--color-black);
-  color: var(--color-white);
+
+.textarea {
+  height: 6em;
 }
 
 @media only screen and (min-width: 612px) {
-  input[type=text],
-input[type=email],
-textarea {
+  form > input,
+form > textarea {
     width: 80%;
   }
 }
+.button-submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+textarea:active {
+  border-radius: 5px;
+  border: none;
+  border-bottom: 2px solid var(--color-teal-1);
+}
+
 .prefooter,
 .social-legal {
   padding: 4% 4%;
@@ -881,20 +870,10 @@ textarea {
   background-color: var(--color-black);
 }
 .footer-right, .footer-left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   text-align: center;
+}
+.footer__text--left-align {
+  text-align: left;
 }
 
 .footer-left,
@@ -931,7 +910,7 @@ textarea {
     padding: 10rem;
   }
 }
-.text--white {
+.footer__text--white {
   color: var(--color-white);
   text-align: center;
 }
@@ -948,6 +927,11 @@ textarea {
 
 .title-product {
   text-align: center;
+}
+
+.label-color {
+  color: var(--color-teal-1);
+  font-weight: 700;
 }
 
 /*----------------Elemento absolute ABOUT-----------------*/
