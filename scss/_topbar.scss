@@ -38,6 +38,16 @@
     width: 100vw;
     background-color: var(--color-yellow-1);
     opacity: .97;
+
+    &__item-link {
+      text-decoration: none;
+      color: var(--color-white);
+      font-family: var(--font-lalezar);
+
+      &:hover {
+          font-style: italic;
+      }
+    }
   }
   
 .hide {

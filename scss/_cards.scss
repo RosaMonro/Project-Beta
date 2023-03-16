@@ -1,48 +1,100 @@
-/*------------------------INTRO AMARILLA---------------------*/
+.card {
 
-.card-intro {
-    padding-top: 4%;
-    padding-bottom: 4%;
-    padding-left: 8%;
-    padding-right: 8%;
-    background-color: var(--color-yellow-1);
+    &-intro{
+    /*------------------------INTRO AMARILLA---------------------*/
+        padding-top: 4%;
+        padding-bottom: 4%;
+        padding-left: 8%;
+        padding-right: 8%;
+        background-color: var(--color-yellow-1);
 
-        &__title {
-        line-height: 130%;
+            &__title {
+                line-height: 130%;
+            }
+
+            &__subitle {
+                line-height: 170%;
+            }
     }
-        &__subitle {
-        line-height: 170%;
+
+    /*-------------------------CTA--------------------------*/
+
+    &-cta {
+        background-color: var(--color-yellow-2);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 4% 16%;
+        margin: 4.8rem 0;
+    }
+
+    /*-------------------------POST--------------------------*/
+    &__last-post {
+        padding: 4em;
+        background-color: var(--color-teal-2);
+    }
+
+    &-post {
+        display: flex;
+        flex-direction: column;
+        gap: 4em;
+    }
+
+    /*---------------------SUMARY-CARDS--------------------------*/
+    &-catalog {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1em;
+        margin: 4.8rem 0;
+    }
+
+    &-summary {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 2em;
+        border: solid 1px var(--color-black);
+
+        &__text {
+            text-align: left;
+        }
+    }
+
+    /*---------------------OPINIONES------------------------*/
+    &-opinions {
+        background-color: var(--color-yellow-2);
+        text-align: center;
+        text-align: center;
+        padding: 4% 4%;
+        margin: 4.8rem 0;
+
+        &__samples {
+            margin: 4rem;
+        }
+    }
+
+    /*--------------------------------ABOUT-------------------------------*/
+    &-profile {
+        margin: 6em 0;
+        position: relative;
+
+        &-info {
+            text-align: center;
+            margin-bottom: 4.8rem;
+        }
     }
 }
 
+/*----------------------------------------------------------------*/
+/*-------------------------MEDIA QUERIES--------------------------*/
 
-/*---------------------CALL TO ACTION---------------------------*/
 
-.cta {
-    background-color: var(--color-yellow-2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 4% 16%;
-    margin: 4.8rem 0;
-}
 /*-------------------------POST--------------------------*/
 
-.card__last-post {
-    padding: 4em;
-    background-color: var(--color-teal-2);
-}
-
-
-.last-post {
-    display: flex;
-    flex-direction: column;
-    gap: 4em;
-}
-
 @media only screen and (min-width: 725px) {
-    .last-post {
+    .card-post {
         display: flex;
         flex-direction: row;
         gap: 4em;
@@ -51,55 +103,18 @@
 
 
 /*---------------------SUMARY-CARDS--------------------------*/
-
-.catalog-cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1em;
-    margin: 4.8rem 0;
-}
-
 @media only screen and (min-width: 620px) {
-        .catalog-cards {
+        .card-catalog {
             flex-direction: row;
             margin: 10rem 0;
         }
     }
 
 
-.summary-card {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 2em;
-    border: solid 1px var(--color-black);
-
-        &__text {
-            text-align: left;
-        }
-}
-
-
-
-/*---------------------OPINIONES------------------------*/
-
-.opinions {
-    background-color: var(--color-yellow-2);
-    text-align: center;
-    text-align: center;
-    padding: 4% 4%;
-    margin: 4.8rem 0;
-
-        &__samples {
-            margin: 4rem;
-        }
-}
-
-
+/*---------------------OPINIONES + CTA------------------------*/
 
 @media only screen and (min-width: 830px) {
-    .opinions__samples {
+    .card-opinions__samples {
         display: flex;
         gap: 4rem;
     }
@@ -107,31 +122,22 @@
 
 
 @media only screen and (min-width:1040px ) {
-    .cta,
-    .opinions {
+    .card-cta,
+    .card-opinions {
         margin: 10rem 0;
     }
 }
 
 /*--------------------------------ABOUT-------------------------------*/
-.profile-card {
-    margin: 6em 0;
-    position: relative;
-}
-
-.profile-info {
-     text-align: center;
-     margin-bottom: 4.8rem;;
-}
-
 
 @media only screen and (min-width: 660px) {
-    .profile {
+    .card-profile--rosa,
+    .card-profile--daniel {
         display: flex;
         flex-direction: row;
     }
 
-    .profile-info {
+    .card-profile-info {
         text-align: center;
         width: 50%;
    }

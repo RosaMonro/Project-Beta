@@ -1,6 +1,6 @@
 
 .prefooter,
-.social-legal {
+.footer-links {
     padding: 4% 4%;
     text-align: center;
     background-color: var(--color-yellow-1);
@@ -14,20 +14,22 @@
     padding: 8% 2%;
     background-color: var(--color-black);
 
-        &-right,
-        &-left {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-}
-
-    .footer-left,
-    .footer-right {
+    &__right,
+    &__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
         width: 50%;
     }
+
+    &__contact-link {
+        text-decoration: none;
+        color: var(--color-teal-1);
+        margin: .5em 0;
+    }
+}
 
 
 
@@ -40,12 +42,12 @@
         padding: 4.8rem
     }
 
-    .footer-left,
-    .footer-right {
+    .footer__left,
+    .footer__right {
         width: 50%;
     }
 
-    .social-legal {
+    .footer-links {
         display: flex;
         justify-content: space-between;
         padding: 2% 4%;
