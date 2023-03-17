@@ -940,7 +940,7 @@ textarea.input--footer {
 
 /*--------------------------------------------------------*/
 /*----------------Elemento circular absolute ABOUT-----------------*/
-.profile__bg--teal, .profile__bg--yellow {
+.profile__bg--teal {
   position: absolute;
   z-index: -1;
   background-color: var(--color-teal-2);
@@ -949,13 +949,35 @@ textarea.input--footer {
   border-radius: 50%;
 }
 @media only screen and (min-width: 28.1rem) {
-  .profile__bg--teal, .profile__bg--yellow {
+  .profile__bg--teal {
     width: 330px;
     height: 330px;
   }
 }
 @media only screen and (min-width: 59.3rem) {
-  .profile__bg--teal, .profile__bg--yellow {
+  .profile__bg--teal {
+    width: 450px;
+    height: 450px;
+    top: 0;
+    left: 0;
+  }
+}
+.profile__bg--yellow {
+  position: absolute;
+  z-index: -1;
+  background-color: var(--color-yellow-2);
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+@media only screen and (min-width: 28.1rem) {
+  .profile__bg--yellow {
+    width: 330px;
+    height: 330px;
+  }
+}
+@media only screen and (min-width: 59.3rem) {
+  .profile__bg--yellow {
     width: 450px;
     height: 450px;
     top: 0;
