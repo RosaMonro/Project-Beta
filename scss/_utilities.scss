@@ -1,3 +1,19 @@
+/*--------MEDIA QUERIES-------*/
+$bp-xxs:    28.1rem;  //450px - extra-extra-small
+$bp-xs:     38.7rem;  //620px - estra small
+$bp-s:      45.3rem;  //725px - small
+$bp-sm:     51.8rem;  //830px - samall-medium
+$bp-m:      59.3rem;  //950px - medium
+$bp-lm:     62.7rem;  //1004px - meedium-large
+$bp-l:      65rem;    //1040px - large
+$bp-xl:     71.2rem;  //1140px - extra-large
+$bp-xxl:    80rem;    //1275px - extra-extra-large
+
+@mixin mq ($bp) {
+  @media only screen and (min-width: $bp) {
+      @content; 
+  }
+}
 
 
 .text--white {
@@ -13,42 +29,67 @@
 }
 
 /*--------------------------------------------------------*/
-/*----------------Elemento absolute ABOUT-----------------*/
+/*----------------Elemento circular absolute ABOUT-----------------*/
+.profile__bg {
+    &--teal,
+    &--yellow {
+        position: absolute;
+        z-index: -1;
+        background-color: var(--color-teal-2);
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
 
-.profile__bg--teal {
-    position: absolute;
-    z-index: -1;
-    background-color: var(--color-teal-2);
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-}
-
-.profile__bg--yellow {
-    position: absolute;
-    z-index: -1;
-    background-color: var(--color-yellow-2);
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-}
-
-
-
-@media only screen and (min-width: 410px) {
-    .profile__bg--teal,
-    .profile__bg--yellow {
-        width: 330px;
-        height: 330px
+        @include mq ($bp-xxs) {
+            width: 330px;
+            height: 330px;
+          }
+      
+        @include mq ($bp-m) {
+            width: 450px;
+            height: 450px;
+            top: 0;
+            left:0;
+          }
     }
 }
 
-@media only screen and (min-width: 950px) {
-    .profile__bg--teal,
-    .profile__bg--yellow {
-        width: 450px;
-        height: 450px;
-        top: 0;
-        left:0;
+
+/*-- Aparición/desaparición de título y links según resolución--*/
+
+.title {
+    &-hidden-desktop {
+        display: none;
+
+        @include mq ($bp-s) {
+            display: block;
+            margin: 0;
+        }
+    }
+
+        
+
+    &-hidden-mobile {
+        @include mq ($bp-s) {
+            display: none;
+        }
+    }
+}
+
+
+.links {
+    &-visible1275px {
+        display: none;
+
+        @include mq ($bp-xxl) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &-hiden1275px {
+        @include mq ($bp-xxl) {
+        display: none;
+        }
     }
 }

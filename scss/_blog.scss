@@ -1,0 +1,57 @@
+
+/*--------MEDIA QUERIES-------*/
+$bp-xxs:    28.1rem;  //450px - extra-extra-small
+$bp-xs:     38.7rem;  //620px - estra small
+$bp-s:      45.3rem;  //725px - small
+$bp-sm:     51.8rem;  //830px - samall-medium
+$bp-m:      59.3rem;  //950px - medium
+$bp-lm:     62.7rem;  //1004px - meedium-large
+$bp-l:      65rem;    //1040px - large
+$bp-xl:     71.2rem;  //1140px - extra-large
+$bp-xxl:    80rem;    //1275px - extra-extra-large
+
+@mixin mq ($bp) {
+  @media only screen and (min-width: $bp) {
+      @content; 
+  }
+}
+
+
+
+.blog {
+
+    &__image {
+        @include mq ($bp-s) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+        }
+    }
+
+    &__text {
+        @include mq ($bp-s) {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+    }
+
+    &-single {
+        padding-top: 4%;
+        padding-bottom: 4%;
+        padding-left: 8%;
+        padding-right: 8%;
+
+
+            &__title {
+            line-height: 130%;
+            color: var(--color-teal-1);
+
+            }
+            &__subitle {
+            line-height: 170%;
+            }
+    }
+}
+

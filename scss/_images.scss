@@ -1,65 +1,71 @@
+
+/*--------MEDIA QUERIES-------*/
+$bp-xxs:    28.1rem;  //450px - extra-extra-small
+$bp-xs:     38.7rem;  //620px - estra small
+$bp-s:      45.3rem;  //725px - small
+$bp-sm:     51.8rem;  //830px - samall-medium
+$bp-m:      59.3rem;  //950px - medium
+$bp-lm:     62.7rem;  //1004px - meedium-large
+$bp-l:      65rem;    //1040px - large
+$bp-xl:     71.2rem;  //1140px - extra-large
+$bp-xxl:    80rem;    //1275px - extra-extra-large
+
+@mixin mq ($bp) {
+  @media only screen and (min-width: $bp) {
+      @content; 
+  }
+}
+
 //--------------------IMÁGENES NAV------------------//
 
 .topbar__logo--bicolor {
     width: 13rem;
-    height: 4.4rem;
+
+    @include mq ($bp-l) {
+        width: 20rem;
+    }
+
+    @include mq ($bp-xxl) {
+        width: 26rem;
+    }
 }
 
 .topbar__burger-icon {
     width: 3.6rem;
-    height: 2.4rem;
 }
 
-@media only screen and (min-width: 1040px) {
-    .topbar__logo--bicolor {
-        width: 20rem;
-        height: 5.2rem;
-    }
-}
 
-@media only screen and (min-width: 1500px) {
-    .topbar__logo--bicolor {
-        width: 26rem;
-        height: 6.9rem;
-    }
-}
+
 /*-------------IMAGEN BOTÓN GOOGLE PLAY-------------*/
 
 .button--google {
-    width: 153px;
-}
+    width: 15.3rem;
 
-@media only screen and (min-width: 820px) {
-    .button--google {
-        width: 207px;
-        height: 80px;
+    @include mq ($bp-sm) {
+        width: 20.7rem;
     }
 }
+
+
 
 //------------------IMÁGENES FOOTER----------//
 
-.logo--amarillo {
+.logo--yellow {
     width: 14.3rem;
-    height: 3.91rem;
-}
 
-@media only screen and (min-width: 830px) {
-    .logo--amarillo {
+    @include mq ($bp-sm) {
         width: 28.5rem;
-        height: 9.5rem;
     }
-}
 
-@media only screen and (min-width: 1140px) {
-    .logo--amarillo {
+    @include mq ($bp-xl) {
         width: 39.5rem;
-        height: 13.3rem;
     }
 }
 
-.cta__logo--negro {
+
+
+.cta__logo--black {
     width: 31rem;
-    height: 13rem;
     margin: 1.6rem;
 }
 
@@ -67,7 +73,6 @@
 
 .opinions__samples__img {
     width: 18rem;
-    height: 18rem;
     border-radius: 50%;
     background-color: silver;
 }
@@ -84,7 +89,7 @@
 
 /*-----------------IMÁGENES ENTRADAS BLOG---------------*/
 
-.single__image {
+.blog-single__image {
     width: 100%;
     height: auto;
     margin: 3rem 0;
@@ -101,16 +106,14 @@
 
 .footer-links__icon {
     width: 3rem;
-    height: 3rem;
     margin: 0 .2rem;
 
     &:hover {
         width: 3.2rem;
-        height: 3.2rem;
     }
 }
 
 .profile__icon {
     width: 9.9rem;
-    height: 9.5rem;
+    height: 9.5rem; //no quitar
 }

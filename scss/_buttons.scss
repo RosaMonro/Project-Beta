@@ -1,6 +1,4 @@
 
-
-
 .button {
     
     &--form {
@@ -53,21 +51,5 @@
             color: var(--color-black);
             border: var(--color-yellow-2) 0.3rem solid;
             }
-    }
-}
-
-
-
-
-@media only screen and (min-width: 820px) {
-    .button-submit {
-        height: 67px;
-    }
-}
-
-
-@media only screen and (min-width: 820px) {
-    .footer__button--footer {
-        height: 67px;
     }
 }

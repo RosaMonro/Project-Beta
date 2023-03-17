@@ -1,3 +1,19 @@
+/*--------MEDIA QUERIES-------*/
+$bp-xxs:    28.1rem;  //450px - extra-extra-small
+$bp-xs:     38.7rem;  //620px - estra small
+$bp-s:      45.3rem;  //725px - small
+$bp-sm:     51.8rem;  //830px - samall-medium
+$bp-m:      59.3rem;  //950px - medium
+$bp-lm:     62.7rem;  //1004px - meedium-large
+$bp-l:      65rem;    //1040px - large
+$bp-xl:     71.2rem;  //1140px - extra-large
+$bp-xxl:    80rem;    //1275px - extra-extra-large
+
+@mixin mq ($bp) {
+  @media only screen and (min-width: $bp) {
+      @content; 
+  }
+}
 
 /*-------------------------------------------HEADERS------------------------------------------*/
 
@@ -6,28 +22,19 @@ h1,
     font-size: 3.6rem;
     font-family: 'Lalezar', cursive;
     font-weight: 400;
+
+    @include mq ($bp-xs) {
+      font-size: 5.4rem;
+    }
+
+    @include mq ($bp-m) {
+      font-size: 6.4rem;
+    }
+
+    @include mq ($bp-xxl) {
+      font-size: 8.2rem;
+    }
 }
-
-    @media only screen and (min-width: 613px) {
-        h1,
-      .h1 {
-          font-size: 5.4rem;
-      }
-    }
-
-    @media only screen and (min-width: 960px) {
-        h1,
-      .h1 {
-          font-size: 6.4rem;
-      }
-    }
-
-    @media only screen and (min-width: 1275px) {
-      h1,
-    .h1 {
-        font-size: 8.2rem;
-    }
-  }
 
 
 
@@ -36,28 +43,19 @@ h2,
   font-size: 3.2rem;
   font-family: 'Lalezar', cursive;
   font-weight: 400;
+
+  @include mq ($bp-xs) {
+    font-size: 4.8rem;
+  }
+
+  @include mq ($bp-m) {
+    font-size: 5.4rem;
+  }
+
+  @include mq ($bp-lm) {
+    font-size: 6.4rem;
+  }
 }
-
-    @media only screen and (min-width: 613px) {
-      h2,
-    .h2 {
-        font-size: 4.8rem;
-      }
-    }
-
-    @media only screen and (min-width: 950px) {
-      h2,
-    .h2 {
-        font-size: 5.4rem;
-      }
-    }
-
-    @media only screen and (min-width: 1004px) {
-      h2,
-    .h2 {
-        font-size: 6.4rem;
-      }
-    }
 
 
 
@@ -66,14 +64,11 @@ h3,
   font-size: 3rem;
   font-family: 'Lalezar', cursive;
   font-weight: 400;
-}
 
-    @media only screen and (min-width: 1004px) {
-      h3,
-    .h3 {
-        font-size: 3.2rem;
-      }
-    }
+  @include mq ($bp-lm) {
+    font-size: 3.2rrem;
+  }
+}
 
 
 
@@ -82,27 +77,21 @@ h4,
   font-size: 1.8rem;
   font-family: 'Maitree', serif;
   font-weight: 400;
+
+  @include mq ($bp-xs) {
+    font-size: 2rem;
+  }
+
+  @include mq ($bp-m) {
+    font-size: 2.4rem;
+  }
+
+  @include mq ($bp-xl) {
+    font-size: 3rem;
+  }
 }
 
-    @media only screen and (min-width: 613px) {
-      h4,
-    .h4 {
-        font-size: 2rem;
-      }
-    }
-    @media only screen and (min-width: 950px) {
-      h4,
-    .h4 {
-        font-size: 2.4rem;
-      }
-    }
 
-    @media only screen and (min-width: 1140px) {
-      h4,
-    .h4 {
-        font-size: 3rem;
-      }
-    }
 
 
 h5,
@@ -110,42 +99,35 @@ h5,
   font-size: 1.6rem;
   font-family: 'Maitree', serif;
   font-weight: 400;
+
+  @include mq ($bp-m) {
+    font-size: 2rem;
+  }
+
+  @include mq ($bp-lm) {
+    font-size: 2.4rem;
+  }
 }
 
-    @media only screen and (min-width: 950px) {
-      h5,
-    .h5 {
-        font-size: 2rem;
-      }
-    }
-
-    @media only screen and (min-width: 1004px) {
-      h5,
-    .h5 {
-        font-size: 2.4rem;
-      }
-    }
 
 
 
 h6,
 .h6 {
   font-size: 1.6rem;
+
+  @include mq ($bp-sm) {
+    font-size: 2rem;
+  }
 }
 
-    @media only screen and (min-width: 820px) {
-      h6,
-    .h6 {
-        font-size: 2rem;
-      }
-    }  
 
 
 /*--------------------SUBTÍTULOS----------------*/
-
-@media only screen and (min-width: 460px) {
-    .subtitle {
-      padding-left: 1em;
-      padding-right: 25%;
+.subtitle {
+  @include mq ($bp-xxs) {
+    padding-left: 1em;
+    padding-right: 25%;
   }
 }
+

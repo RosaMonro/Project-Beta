@@ -1,9 +1,34 @@
+/*--------MEDIA QUERIES-------*/
+$bp-xxs:    28.1rem;  //450px - extra-extra-small
+$bp-xs:     38.7rem;  //620px - estra small
+$bp-s:      45.3rem;  //725px - small
+$bp-sm:     51.8rem;  //830px - samall-medium
+$bp-m:      59.3rem;  //950px - medium
+$bp-lm:     62.7rem;  //1004px - meedium-large
+$bp-l:      65rem;    //1040px - large
+$bp-xl:     71.2rem;  //1140px - extra-large
+$bp-xxl:    80rem;    //1275px - extra-extra-large
+
+@mixin mq ($bp) {
+  @media only screen and (min-width: $bp) {
+      @content; 
+  }
+}
+
 
 .prefooter,
 .footer-links {
     padding: 4% 4%;
     text-align: center;
     background-color: var(--color-yellow-1);
+
+    @include mq ($bp-xs) {
+        padding: 2% 16%;
+    }
+
+    @include mq ($bp-xxl){
+        padding: 2% 24%;
+    }
 }
 
 
@@ -14,6 +39,14 @@
     padding: 8% 2%;
     background-color: var(--color-black);
 
+    @include mq ($bp-xs) {
+        padding: 4.8rem;
+    }
+
+    @include mq ($bp-xxl) {
+        padding: 10rem;
+    }
+
     &__right,
     &__left {
         display: flex;
@@ -22,6 +55,10 @@
         align-items: center;
         text-align: center;
         width: 50%;
+
+        @include mq ($bp-xs) {
+            width: 50%;
+        }
     }
 
     &__contact-link {
@@ -29,38 +66,27 @@
         color: var(--color-teal-1);
         margin: .5em 0;
     }
+
+    &-links {
+        @include mq ($bp-xs) {
+            display: flex;
+            justify-content: space-between;
+            padding: 2% 4%;
+        }
+
+        &--legal {
+        text-decoration: none;
+        color: var(--color-black);
+        font-family: var(--font-maitree);
+        font-size: 1.6rem;
+
+            &:hover {
+            font-weight: bold;
+            }
+    } 
+    }
+
+
+          
 }
 
-
-
-@media only screen and (min-width: 620px) {
-    .prefooter {
-        padding: 2% 16%;
-    }
-
-    .footer {
-        padding: 4.8rem
-    }
-
-    .footer__left,
-    .footer__right {
-        width: 50%;
-    }
-
-    .footer-links {
-        display: flex;
-        justify-content: space-between;
-        padding: 2% 4%;
-    }
-}
-
-@media only screen and (min-width:1275px) {
-    .prefooter {
-        padding: 2% 24%;
-    }
-
-    .footer {
-        padding: 10rem
-    }
-
-}

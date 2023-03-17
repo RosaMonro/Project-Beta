@@ -1,3 +1,21 @@
+/*--------MEDIA QUERIES-------*/
+$bp-xxs:    28.1rem;  //450px - extra-extra-small
+$bp-xs:     38.7rem;  //620px - estra small
+$bp-s:      45.3rem;  //725px - small
+$bp-sm:     51.8rem;  //830px - samall-medium
+$bp-m:      59.3rem;  //950px - medium
+$bp-lm:     62.7rem;  //1004px - meedium-large
+$bp-l:      65rem;    //1040px - large
+$bp-xl:     71.2rem;  //1140px - extra-large
+$bp-xxl:    80rem;    //1275px - extra-extra-large
+
+@mixin mq ($bp) {
+  @media only screen and (min-width: $bp) {
+      @content; 
+  }
+}
+
+
 .card {
 
     &-intro{
@@ -17,9 +35,10 @@
             }
     }
 
-    /*-------------------------CTA--------------------------*/
 
     &-cta {
+        /*-------------------------CTA--------------------------*/
+
         background-color: var(--color-yellow-2);
         display: flex;
         flex-direction: column;
@@ -27,10 +46,15 @@
         text-align: center;
         padding: 4% 16%;
         margin: 4.8rem 0;
+
+        @include mq ($bp-l) {
+            margin: 10rem 0;
+        }
     }
 
-    /*-------------------------POST--------------------------*/
     &__last-post {
+        /*-------------------------POST--------------------------*/
+
         padding: 4em;
         background-color: var(--color-teal-2);
     }
@@ -39,15 +63,27 @@
         display: flex;
         flex-direction: column;
         gap: 4em;
+
+        @include mq ($bp-s) {
+            display: flex;
+            flex-direction: row;
+            gap: 4em;
+        }
     }
 
-    /*---------------------SUMARY-CARDS--------------------------*/
     &-catalog {
+        /*---------------------SUMARY-CARDS--------------------------*/
+
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 1em;
         margin: 4.8rem 0;
+
+        @include mq ($bp-xs) {
+            flex-direction: row;
+            margin: 10rem 0;
+        }
     }
 
     &-summary {
@@ -62,84 +98,53 @@
         }
     }
 
-    /*---------------------OPINIONES------------------------*/
     &-opinions {
+        /*---------------------OPINIONES------------------------*/
+
         background-color: var(--color-yellow-2);
         text-align: center;
         text-align: center;
         padding: 4% 4%;
         margin: 4.8rem 0;
 
+        @include mq ($bp-l) {
+            margin: 10rem 0;
+        }
+
         &__samples {
             margin: 4rem;
+
+            @include mq ($bp-sm) {
+                display: flex;
+                gap: 4rem;
+            }
         }
     }
 
-    /*--------------------------------ABOUT-------------------------------*/
     &-profile {
+        /*--------------------------------ABOUT-------------------------------*/
+
         margin: 6em 0;
         position: relative;
 
         &-info {
             text-align: center;
             margin-bottom: 4.8rem;
+
+            @include mq ($bp-xxs) {
+                text-align: center;
+                width: 50%;
+            }
+        }
+
+        &--rosa,
+        &--daniel {
+            @include mq ($bp-xxs) {
+                display: flex;
+                flex-direction: row;
+            }
         }
     }
 }
 
-/*----------------------------------------------------------------*/
-/*-------------------------MEDIA QUERIES--------------------------*/
-
-
-/*-------------------------POST--------------------------*/
-
-@media only screen and (min-width: 725px) {
-    .card-post {
-        display: flex;
-        flex-direction: row;
-        gap: 4em;
-    }
-}
-
-
-/*---------------------SUMARY-CARDS--------------------------*/
-@media only screen and (min-width: 620px) {
-        .card-catalog {
-            flex-direction: row;
-            margin: 10rem 0;
-        }
-    }
-
-
-/*---------------------OPINIONES + CTA------------------------*/
-
-@media only screen and (min-width: 830px) {
-    .card-opinions__samples {
-        display: flex;
-        gap: 4rem;
-    }
-}
-
-
-@media only screen and (min-width:1040px ) {
-    .card-cta,
-    .card-opinions {
-        margin: 10rem 0;
-    }
-}
-
-/*--------------------------------ABOUT-------------------------------*/
-
-@media only screen and (min-width: 660px) {
-    .card-profile--rosa,
-    .card-profile--daniel {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .card-profile-info {
-        text-align: center;
-        width: 50%;
-   }
-}
 

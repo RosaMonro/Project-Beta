@@ -1,5 +1,27 @@
+
+/*--------MEDIA QUERIES-------*/
+$bp-xxs:    28.1rem;  //450px - extra-extra-small
+$bp-xs:     38.7rem;  //620px - estra small
+$bp-s:      45.3rem;  //725px - small
+$bp-sm:     51.8rem;  //830px - samall-medium
+$bp-m:      59.3rem;  //950px - medium
+$bp-lm:     62.7rem;  //1004px - meedium-large
+$bp-l:      65rem;    //1040px - large
+$bp-xl:     71.2rem;  //1140px - extra-large
+$bp-xxl:    80rem;    //1275px - extra-extra-large
+
+@mixin mq ($bp) {
+  @media only screen and (min-width: $bp) {
+      @content; 
+  }
+}
+
 .product {
     margin: 6em 2em 6em 2em;
+
+    @include mq ($bp-s) {
+        margin: 9em 2em 9em 2em;
+    }
 
         &__links {
         display:flex;
@@ -8,74 +30,44 @@
         margin-bottom: 6rem;
         }
 
+        &__firstDescription {
+            @include mq ($bp-s) {
+                display: flex;
+                flex-direction: row;
+                gap: 6%;
+            }
+        }
+
         &__secondDescription--reverse {
             display: flex;
             flex-direction: column-reverse;
+
+            @include mq ($bp-s) {
+                display: flex;
+                flex-direction: row;
+                gap: 6%;
+            }
         }
+
+        &__mockup {
+            @include mq ($bp-s) {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 50%;
+            }
+        }
+
+        &__text {
+            @include mq ($bp-s) {
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+            }
+        }
+        
 }
 
 
-/*-- Aparición/desaparición del título y links según resolución--*/
 
 
-.title-hidden-desktop {
-    display: none;
-}
-
-.links-visible1275px {
-    display: none;
-}
-
-
-
-@media only screen and (min-width: 725px) {
-    .product {
-        margin: 9em 2em 9em 2em;
-    }
-
-    .product__firstDescription,
-    .product__secondDescription--reverse {
-        display: flex;
-        flex-direction: row;
-        gap: 6%;
-    }
-
-    .product__mockup,
-    .blog__image {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 50%;
-    }
-
-    .product__text,
-    .blog__text {
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-    }
-
-    .product__mockup {
-        flex-direction: row;
-    }
-
-    .title-hidden-mobile {
-        display: none;
-    }
-
-    .title-hidden-desktop {
-        display: block;
-        margin: 0;
-    }
-}
-
-@media only screen and (min-width: 1275px) {
-    .links-visible1275px {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .links-hiden1275px {
-        display: none;
-    }
-}

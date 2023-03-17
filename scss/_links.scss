@@ -1,15 +1,4 @@
 
-
-.link-arrow {
-    transform: translateX(-30%); //no muevo el bloque, el bloque se queda donde está porque no modifica el entorno, pero sí modifico el cómo se ve en pantalla//
-    opacity: 0; //para que parezca q no está//
-    transition-delay: 0;
-    transition-duration: 0.4s;
-    transition-property: opacity, transform;
-    transition-timing-function: ease-out;
-  }
-
-
 .link {
     text-decoration: none;
     font-family: var(--font-maitree);
@@ -23,28 +12,24 @@
             transform: translateX(0);
         }
     }
+
+    &-arrow {
+        transform: translateX(-30%); //no muevo el bloque, el bloque se queda donde está porque no modifica el entorno, pero sí modifico el cómo se ve en pantalla//
+        opacity: 0; //para que parezca q no está//
+        transition-delay: 0;
+        transition-duration: 0.4s;
+        transition-property: opacity, transform;
+        transition-timing-function: ease-out;
+    }
+
+    &-priv {
+        color: var(--color-teal-1);
+        font-family: var(--font-maitree);
+        font-size: 1.6rem;
+    }
+
 }
 
 
 
-
-
-.footer-links--legal {
-    text-decoration: none;
-    color: var(--color-black);
-    font-family: var(--font-maitree);
-    font-size: 1.6rem;
-}
-
-
-.footer-links--legal:hover {
-    font-weight: bold;
-}
-
-
-.link-priv {
-    color: var(--color-teal-1);
-    font-family: var(--font-maitree);
-    font-size: 1.6rem;
-}
 

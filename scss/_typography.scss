@@ -1,22 +1,36 @@
+/*--------MEDIA QUERIES-------*/
+$bp-xxs:    28.1rem;  //450px - extra-extra-small
+$bp-xs:     38.7rem;  //620px - estra small
+$bp-s:      45.3rem;  //725px - small
+$bp-sm:     51.8rem;  //830px - samall-medium
+$bp-m:      59.3rem;  //950px - medium
+$bp-lm:     62.7rem;  //1004px - meedium-large
+$bp-l:      65rem;    //1040px - large
+$bp-xl:     71.2rem;  //1140px - extra-large
+$bp-xxl:    80rem;    //1275px - extra-extra-large
+
+@mixin mq ($bp) {
+  @media only screen and (min-width: $bp) {
+      @content; 
+  }
+}
+
 /*---------------------Títulos de la sección  de descripcion de las apps-----------------*/
 
 .features__title {
     font-size: 4.8rem;
     font-family: 'Lalezar', cursive;
     color: var(--color-teal-1);
+
+    @include mq ($bp-xs) {
+      font-size: 8.8rem;
+    }
+
+    @include mq ($bp-m) {
+      font-size: 12.8rem;
+    }
 }
 
-      @media only screen and (min-width:600px) {
-        .features__title {
-          font-size: 8.8rem;
-        }
-      }
-
-      @media only screen and (min-width:950px) {
-        .features__title {
-          font-size: 12.8rem;
-        }      
-      }
 
       /*-----------------------------------------------------------*/
 
@@ -24,12 +38,10 @@ p,
 .p {
     font-size: 1.6rem;
     font-family: 'Maitree', serif;
+
+      @include mq ($bp-m) {
+        font-size: 2rem;
+      }
   }
   
-      @media only screen and (min-width: 950px) {
-        p,
-        .p {
-          font-size: 2rem;
-        }
-      }
   

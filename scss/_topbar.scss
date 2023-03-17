@@ -1,3 +1,20 @@
+/*--------MEDIA QUERIES-------*/
+$bp-xxs:    28.1rem;  //450px - extra-extra-small
+$bp-xs:     38.7rem;  //620px - estra small
+$bp-s:      45.3rem;  //725px - small
+$bp-sm:     51.8rem;  //830px - samall-medium
+$bp-m:      59.3rem;  //950px - medium
+$bp-lm:     62.7rem;  //1004px - meedium-large
+$bp-l:      65rem;    //1040px - large
+$bp-xl:     71.2rem;  //1140px - extra-large
+$bp-xxl:    80rem;    //1275px - extra-extra-large
+
+@mixin mq ($bp) {
+  @media only screen and (min-width: $bp) {
+      @content; 
+  }
+}
+
 /*-------------------TOPBAR--------------------*/
 .topbar {
     background-color: #fff;
@@ -8,11 +25,22 @@
     inset: 0 0 auto 0;
     align-items: center;
     z-index: 1;
+
+      &__burger-icon {
+        @include mq ($bp-l) {
+          display: none;
+        }
+      }
 }
 
 .menu {
   display: none;
   gap: 3em;
+
+    @include mq ($bp-l) {
+      display: flex;
+      gap: 3em
+    }
 
     &__item {
       text-decoration: none;
@@ -52,17 +80,4 @@
   
 .hide {
   display: none;
-}
-
-
-@media only screen and (min-width: 1040px) {
-
-  .topbar__burger-icon {
-    display: none;
-  }
-
-  .menu {
-    display: flex;
-    gap: 3em
-  }
 }

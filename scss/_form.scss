@@ -1,3 +1,20 @@
+/*--------MEDIA QUERIES-------*/
+$bp-xxs:    28.1rem;  //450px - extra-extra-small
+$bp-xs:     38.7rem;  //620px - estra small
+$bp-s:      45.3rem;  //725px - small
+$bp-sm:     51.8rem;  //830px - samall-medium
+$bp-m:      59.3rem;  //950px - medium
+$bp-lm:     62.7rem;  //1004px - meedium-large
+$bp-l:      65rem;    //1040px - large
+$bp-xl:     71.2rem;  //1140px - extra-large
+$bp-xxl:    80rem;    //1275px - extra-extra-large
+
+@mixin mq ($bp) {
+  @media only screen and (min-width: $bp) {
+      @content; 
+  }
+}
+
 
 /*------------------FORMULARIO DE CONTACTO--------------*/
 form {
@@ -30,6 +47,10 @@ textarea {
     border-bottom: 2px solid var(--color-teal-1);
     background-color: var(--color-teal-2); 
 
+    @include mq ($bp-xs) {
+        width: 80%;
+    }
+
     &:focus {
         border-radius: 5px;
         outline: none;
@@ -47,14 +68,6 @@ textarea {
     }
 }
 
-
-@media only screen and (min-width: 612px) {
-    input[type="text"],
-    input[type="email"],
-    textarea {
-        width: 80%;
-    }
-}
 
 
 

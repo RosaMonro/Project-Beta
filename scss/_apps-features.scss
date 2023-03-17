@@ -1,3 +1,20 @@
+/*--------MEDIA QUERIES-------*/
+$bp-xxs:    28.1rem;  //450px - extra-extra-small
+$bp-xs:     38.7rem;  //620px - estra small
+$bp-s:      45.3rem;  //725px - small
+$bp-sm:     51.8rem;  //830px - samall-medium
+$bp-m:      59.3rem;  //950px - medium
+$bp-lm:     62.7rem;  //1004px - meedium-large
+$bp-l:      65rem;    //1040px - large
+$bp-xl:     71.2rem;  //1140px - extra-large
+$bp-xxl:    80rem;    //1275px - extra-extra-large
+
+@mixin mq ($bp) {
+  @media only screen and (min-width: $bp) {
+      @content; 
+  }
+}
+
 /*----------------------------CARACTERÍSTICAS ----------------------*/
 
 .features {
@@ -13,26 +30,21 @@
 
         &__text-bg {
         background-color: var(--color-teal-2);
-        padding: 30px; 
+        padding: 3rem; 
         margin-left: 10%;
+
+        @include mq($bp-xxs) {
+          margin-left: 20%;
+        }
+
+        @include mq($bp-xs) {
+          margin-left: 25%;
+        }
+
+        @include mq ($bp-m) {
+          margin-left: 35%;
+
+        }
     }
+
 }
-
-
-  @media only screen and (min-width: 400px) {
-    .features__text-bg {
-        margin-left: 20%;
-    }
-  }
-
-  @media only screen and (min-width: 600px) {
-    .features__text-bg {
-        margin-left: 25%;
-    }
-  }
-
-  @media only screen and (min-width: 950px) {
-    .features__text-bg {
-        margin-left: 35%;
-    }
-  }
