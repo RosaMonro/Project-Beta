@@ -674,7 +674,7 @@ p,
 
 /*-----------------IMÁGENES ENTRADAS BLOG---------------*/
 .blog-single__image {
-  width: 100%;
+  width: 40rem;
   height: auto;
   margin: 3rem 0;
 }
