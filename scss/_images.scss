@@ -89,8 +89,14 @@ $bp-xxl:    80rem;    //1275px - extra-extra-large
 
 /*-----------------IMÁGENES ENTRADAS BLOG---------------*/
 
-.blog-single__image {
+.blog__image {
     width: 40rem;
+    height: auto;
+    margin: 3rem 0;
+}
+
+.blog-single__image {
+    width: 100%;
     height: auto;
     margin: 3rem 0;
 }

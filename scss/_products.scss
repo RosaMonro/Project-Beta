@@ -19,9 +19,16 @@ $bp-xxl:    80rem;    //1275px - extra-extra-large
 .product {
     margin: 6em 2em 6em 2em;
 
-    @include mq ($bp-s) {
-        margin: 9em 2em 9em 2em;
-    }
+    // @include mq ($bp-s) {
+    //     margin: 9em 2em 9em 2em;
+    // }
+
+        &__links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
 
         &__title {
             display: flex;

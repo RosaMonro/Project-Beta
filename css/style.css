@@ -478,10 +478,17 @@ p,
 .product {
   margin: 6em 2em 6em 2em;
 }
-@media only screen and (min-width: 45.3rem) {
-  .product {
-    margin: 9em 2em 9em 2em;
-  }
+.product__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .product__title {
   display: -webkit-box;
@@ -673,8 +680,14 @@ p,
 }
 
 /*-----------------IMÁGENES ENTRADAS BLOG---------------*/
-.blog-single__image {
+.blog__image {
   width: 40rem;
+  height: auto;
+  margin: 3rem 0;
+}
+
+.blog-single__image {
+  width: 100%;
   height: auto;
   margin: 3rem 0;
 }
@@ -948,6 +961,10 @@ textarea.input--footer {
 
 .align-center {
   text-align: center;
+}
+
+.h1--margin-bottom-0 {
+  margin-bottom: 0;
 }
 
 /*--------------------------------------------------------*/
