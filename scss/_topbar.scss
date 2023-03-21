@@ -16,6 +16,7 @@ $bp-xxl:    80rem;    //1275px - extra-extra-large
 }
 
 /*-------------------TOPBAR--------------------*/
+
 .topbar {
     background-color: #fff;
     display: flex;
@@ -35,6 +36,7 @@ $bp-xxl:    80rem;    //1275px - extra-extra-large
 
 .menu {
   display: none;
+  text-decoration: none;
   gap: 3em;
 
     @include mq ($bp-l) {
@@ -43,11 +45,15 @@ $bp-xxl:    80rem;    //1275px - extra-extra-large
     }
 
     &__item {
+      list-style: none;
+    }
+
+    &__item-link {
       text-decoration: none;
       color: var(--color-black);
     }
 
-    &__item:hover {
+    &__item-link:hover {
       font-style: italic;
     }
 }
