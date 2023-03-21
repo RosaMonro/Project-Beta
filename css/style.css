@@ -1,3 +1,11 @@
+/*
+Theme Name: Sinaptikapp
+Description: Tema para el proyecto de SinaptikAPP
+Author: Rosa
+Version: 1.0
+*/
+
+
 @charset "UTF-8";
 :root {
   /*---variables de color---*/
@@ -19,7 +27,7 @@ html {
   color: var(--color-black);
 }
 
-/*------------------------------------ MÁRGENES----------------------------------*/
+/*------------------- MÁRGENES-----------------*/
 body {
   max-width: 170rem;
   margin-top: 9.5rem;
@@ -51,7 +59,7 @@ main {
 }
 
 /*--------MEDIA QUERIES-------*/
-/*-------------------------------------------HEADERS------------------------------------------*/
+/*------------------------HEADERS--------------------*/
 h1,
 .h1 {
   font-size: 3.6rem;
@@ -289,7 +297,7 @@ p,
 
 /*--------MEDIA QUERIES-------*/
 .card-intro {
-  /*------------------------INTRO AMARILLA---------------------*/
+  /*------------------------INTRO AMARILLA--------------------*/
   padding-top: 4%;
   padding-bottom: 4%;
   padding-left: 8%;
@@ -496,6 +504,7 @@ p,
 }
 
 /*--------MEDIA QUERIES-------*/
+/*----------------------------------------*/
 .product {
   margin: 6em 2em 6em 2em;
 }
@@ -773,7 +782,7 @@ p,
 }
 
 .button--form {
-  /*--------------BOTÓN FORMULARIO------------*/
+  /*--------------BOTÓN FORMULARIO-------------*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -828,7 +837,7 @@ p,
 }
 
 /*--------MEDIA QUERIES-------*/
-/*------------------FORMULARIO DE CONTACTO--------------*/
+/*------------------FORMULARIO DE CONTACTO---------------*/
 form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -889,6 +898,7 @@ textarea.input--footer {
 }
 
 /*--------MEDIA QUERIES-------*/
+/*----------------------------------------*/
 .prefooter,
 .footer-links {
   padding: 4% 4%;
@@ -977,6 +987,7 @@ textarea.input--footer {
 }
 
 /*--------MEDIA QUERIES-------*/
+/*----------------------------------------*/
 .text--white {
   color: var(--color-white);
 }
