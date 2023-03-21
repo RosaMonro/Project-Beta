@@ -40,16 +40,12 @@ $bp-xxl:    80rem;    //1275px - extra-extra-large
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-left: calc((100vw - 580px)/2);
+        margin-left: calc((100% - 580px)/2);
         margin-top: calc((100vh - 580px)/2);
         width: 580px;
         height: 580px;
         background-color: var(--color-teal-2);
         border-radius: 50%;             
-
-            &__text {
-
-            }
     }
 
 

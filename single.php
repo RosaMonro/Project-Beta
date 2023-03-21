@@ -1,45 +1,6 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Maitree&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="/css/style.css">
-    <title>Entrada</title>
-</head>
-<body>
-    
-    <header class="topbar">
-     
-        <a href=""><img  class="topbar__logo--bicolor"  src="/images/logo/logo-bicolor.svg" alt="logotipo de sinaptikapp"></a>
+<?php get_header(); the_post(); ?>
 
-        <div>
-            <ul class="menu">
-                <li class="menu__item"><a  class="menu__item-link  p" href="">Inicio</a></li>
-                <li class="menu__item"><a  class="menu__item-link  p" href="">Aplicaciones</a></li>
-                <li class="menu__item"><a  class="menu__item-link  p" href="">Blog</a></li>
-                <li class="menu__item"><a  class="menu__item-link  p" href="">Conócenos</a></li>
-                <li class="menu__item"><a  class="menu__item-link  p" href="">Háblanos</a></li>
-            </ul>
-                
-            <div>
-                <img  class="topbar__burger-icon  btn"  onclick="toggleMenu()"  src="/images/iconos/Burger icon.svg" alt="menú" >
-                <ul class="burger-menu  hide">
-                    <li class="burger-menu__item"><a class="burger-menu__item-link h2" href="">Inicio</a></li>
-                    <li class="burger-menu__item"><a class="burger-menu__item-link h2" href="">Aplicaciones</a></li>
-                    <li class="burger-menu__item"><a class="burger-menu__item-link h2" href="">Blog</a></li>
-                    <li class="burger-menu__item"><a class="burger-menu__item-link h2" href="">Conócenos</a></li>
-                    <li class="burger-menu__item"><a class="burger-menu__item-link h2" href="">Háblanos</a></li>
-                </ul>    
-            </div>
-        </div> 
-                    
-    </header>
-
-    <main>
+<main>
         <section class="blog-single">
 
 
@@ -127,57 +88,4 @@
 
     </main>
 
-    <footer>
-
-        <div class="prefooter">
-            <p><strong>Descarga el paquete PREMIUM</strong> y ahorra tiempo en la preparación de tus sesiones con todas las 
-                aplicaciones disponibles de SinaptikAPP. </p>
-
-            <a href="" target="_blank">
-                <img class="button--google" src="/images/Botones/google.png" alt="Botón con enlace a la playstore">
-            </a>
-        </div>
-
-
-        <div class="footer">
-
-            <div class="footer__left">
-
-                <img class="logo--yellow" src="/images/logo/logo-amarillo.svg" alt="logo sinaptikapp">                
-                <p class="text--white">Recibe novedades y consejos con nuestra NEWSLETTER</p>               
-                <input class="input--footer" type="email" name="email" id="email" placeholder="Email" required aria-label="Escribe tu correo electrónico">
-                <input class="h6  button--footer" type="submit" value="Suscríbete">
-
-            </div>
-
-            <div class="footer__right">
-
-                <a class="h2  footer__contact-link"  href="">Hablemos</a>
-                <p class="text--white">hola@sinaptikapp.com</p>
-                <p class="text--white">XXX.XXX.XXX</p>
-
-            </div>
-        </div>
-
-        <div class="footer-links">
-
-            <div>
-                <a href=""><img class="footer-links__icon" src="/images/iconos/instagram.svg" alt="icono con enlace a instragram"></a>
-                <a href=""><img class="footer-links__icon" src="/images/iconos/whatsapp.svg" alt="icono con enlace a whatsapp"></a>
-                <a href=""><img class="footer-links__icon" src="/images/iconos/linkedin.svg" alt="icono con enlace a linkedin"></a>
-                <a href=""><img class="footer-links__icon" src="/images/iconos/twitter.svg" alt="icono con enlace a twitter"></a>
-            </div>
-
-            <div>
-                <a class="footer-links--legal" href="">Política de privacidad. </a>
-                <a class="footer-links--legal" href="">Aviso legal. </a>
-                <a class="footer-links--legal" href="">Cookies. </a>
-            </div>
-
-        </div>
-
-    </footer>
-
-    <script src="menu.js"></script>
-</body>
-</html>
+<?php get_footer(); ?>

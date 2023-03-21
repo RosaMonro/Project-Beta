@@ -14,29 +14,31 @@
 
 <body>
     
-    <header class="topbar"> 
+    <header class="topbar">
         
         <a href=""><img  class="topbar__logo--bicolor"  src="/images/logo/logo-bicolor.svg" alt="logotipo de sinaptikapp"></a>
-            
-        <ul class="menu">
-            <li class="menu__item"><a  class="menu__item-link  p" href="">Inicio</a></li>
-            <li class="menu__item"><a  class="menu__item-link  p" href="">Aplicaciones</a></li>
-            <li class="menu__item"><a  class="menu__item-link  p" href="">Blog</a></li>
-            <li class="menu__item"><a  class="menu__item-link  p" href="">Conócenos</a></li>
-            <li class="menu__item"><a  class="menu__item-link  p" href="">Háblanos</a></li>
-        </ul>
 
         <div>
-            <img  class="topbar__burger-icon  btn"  onclick="toggleMenu()"  src="/images/iconos/Burger icon.svg" alt="menú" >
-            <ul class="burger-menu  hide">
-                <li class="burger-menu__item"><a class="burger-menu__item-link h2" href="">Inicio</a></li>
-                <li class="burger-menu__item"><a class="burger-menu__item-link h2" href="">Aplicaciones</a></li>
-                <li class="burger-menu__item"><a class="burger-menu__item-link h2" href="">Blog</a></li>
-                <li class="burger-menu__item"><a class="burger-menu__item-link h2" href="">Conócenos</a></li>
-                <li class="burger-menu__item"><a class="burger-menu__item-link h2" href="">Háblanos</a></li>
-            </ul>    
-        </div>
-
+            <ul class="menu">
+                <li class="menu__item"><a  class="menu__item-link  p" href="">Inicio</a></li>
+                <li class="menu__item"><a  class="menu__item-link  p" href="">Aplicaciones</a></li>
+                <li class="menu__item"><a  class="menu__item-link  p" href="">Blog</a></li>
+                <li class="menu__item"><a  class="menu__item-link  p" href="">Conócenos</a></li>
+                <li class="menu__item"><a  class="menu__item-link  p" href="">Háblanos</a></li>
+            </ul>
+                
+            <div>
+                <img  class="topbar__burger-icon  btn"  onclick="toggleMenu()"  src="/images/iconos/Burger icon.svg" alt="menú" >
+                <ul class="burger-menu  hide">
+                    <li class="burger-menu__item"><a class="burger-menu__item-link h2" href="">Inicio</a></li>
+                    <li class="burger-menu__item"><a class="burger-menu__item-link h2" href="">Aplicaciones</a></li>
+                    <li class="burger-menu__item"><a class="burger-menu__item-link h2" href="">Blog</a></li>
+                    <li class="burger-menu__item"><a class="burger-menu__item-link h2" href="">Conócenos</a></li>
+                    <li class="burger-menu__item"><a class="burger-menu__item-link h2" href="">Háblanos</a></li>
+                </ul>    
+            </div>
+        </div> 
+                    
     </header>
 
 
