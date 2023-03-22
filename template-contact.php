@@ -2,6 +2,9 @@
 
 <main>
 
+    <?php /* Template name: háblanos */ ?>
+
+
         <div class="contact">
 
             <h2 class="h1"><?php the_title(); ?></h2>

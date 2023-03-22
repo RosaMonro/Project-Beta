@@ -1,7 +1,10 @@
 <?php get_header(); the_post(); ?>
 
-<main>
+    <main>
 
+        <?php /* Template name: about */ ?>
+
+        
         <div class="card-intro">
             
             <h1 class="card-intro__title"><?php the_title(); ?></h1>
