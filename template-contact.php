@@ -4,7 +4,7 @@
 
         <div class="contact">
 
-            <h2 class="h1">Cómo podemos ayudarte</h2>
+            <h2 class="h1"><?php the_title(); ?></h2>
 
             <form class="h5 label-color" action="" method="post">
 

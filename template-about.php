@@ -4,7 +4,7 @@
 
         <div class="card-intro">
             
-            <h1 class="card-intro__title">Quiénes hacemos SinaptikAPP</h1>
+            <h1 class="card-intro__title"><?php the_title(); ?></h1>
             <img class="button--google" src="/images/Botones/google.png" alt="Botón con enlace a la playstore">
 
         </div>

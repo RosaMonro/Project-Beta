@@ -36,10 +36,6 @@ add_action ( 'wp_enqueue_scripts', 'my_scripts_and_css', 100 );
     add_theme_support ( 'title-tag' );
     add_theme_support ( 'post-thumbnails' );
 
-    // function quitar_estilos_backend() {
-    //     wp_deregister_style( 'wp-admin' );
-    //  }
-    //  add_action( 'admin_enqueue_scripts', 'quitar_estilos_backend' );
 
 
 //  REGISTRO DE MENÚS

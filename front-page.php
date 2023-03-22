@@ -3,7 +3,8 @@
 <main>
         <div class="card-intro">
 
-            <h1 class="card-intro__title">Aplicaciones para la rehabilitación neurológica</h1>
+            <h1 class="card-intro__title"><?php the_title(); ?></h1>
+
             <h2 class="h4  card-intro__subtitle">Una fuente de recursos para tus sesiones de estimulación 
                 cognitiva diseñada por neuropsicólogos. </h2>
             <img class="button--google" src="/images/Botones/google.png" alt="Botón con enlace a la playstore">

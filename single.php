@@ -4,38 +4,10 @@
         <section class="blog-single">
 
 
-                <h1 class="h3 blog-single__title">"Aplicaciones de neurorrehabilitación para profesionales: la clave del éxito en la terapia”</h1>
+                <h1 class="h3 blog-single__title"><?php the_title(); ?></h1>
 
-                <p class="blog-single__subtitle">Como neuropsicólogos, buscamos siempre brindar el mejor tratamiento a nuestros pacientes y ayudarlos a lograr 
-                    su máximo potencial en su recuperación. En un mundo cada vez más digital, las aplicaciones móviles de 
-                    neurorrehabilitación son una herramienta clave para lograr esto.
-                </p>
+                <?php the_content(); ?>
 
-                <div><img class="blog-single__image"  src="/images/Mockups/Secuencial-modo.png" alt=""></div>
-
-            
-            <div>               
-                <p>No todas las aplicaciones de neurorrehabilitación son iguales. Es importante asegurarse de que la 
-                    aplicación que utilices esté desarrollada por expertos en el campo de la neurorrehabilitación, para garantizar 
-                    que los ejercicios y terapias ofrecidos sean efectivos y se adapten a las necesidades individuales de cada 
-                    paciente.
-                </p>
-                <p>Es importante buscar aplicaciones que permitan a los terapeutas personalizar la terapia, modificando variables 
-                    como la dificultad, los tiempos, el número de estímulos, los distractores, etc. Esto permite una mayor 
-                    flexibilidad en la terapia y una mejor adaptación a las necesidades individuales de cada paciente.
-                </p>
-                <p>Otro factor importante a tener en cuenta es el aspecto visual y la accesibilidad de la aplicación. 
-                    Los pacientes responden mejor a las terapias cuando el material es atractivo y motivador y con un diseño 
-                    ajustado a su edad. Además, es importante que la aplicación sea fácil de manejar para el terapeuta pero 
-                    también suficientemente intuitiva para el paciente. Así, ambos pueden concentrarse en la terapia en sí, en 
-                    lugar de en cómo usar la aplicación.
-                </p>
-                <p>En resumen, cuando se trata de aplicaciones móviles de neurorrehabilitación, la clave del éxito está en elegir 
-                    aquellas que estén desarrolladas por expertos en la materia, permitan la personalización de la terapia, y sean
-                    atractivas y fáciles de usar para pacientes y terapeutas. ¡Investiga las opciones disponibles y descubre cómo
-                    pueden mejorar tus sesiones de terapia!"
-                </p>
-            </div>
 
         </section>
 
@@ -43,30 +15,19 @@
 
             <div class="card-catalog">
 
-                <div class="card-summary">
-                    <h2 class="h3">Lorem Ipsum</h2>
-                    <div><img class="blog-single__image" src="/images/Mockups/Secuencial.jpg" alt="Imágenes de los diferentes modos de la aplicación llamada Secuencial"></div>
-                    <div>
-                        <a class="link" href="">Quiero saber más <img class="link-arrow" src="/images/iconos/flecha.svg" alt="icono flecha"></a>
-                    </div>
-                </div>
+                <?php while ( have_posts() ) : the_post(); ?>
 
-                <div class="card-summary">
-                    <h2 class="h3">Lorem Ipsum</h2>
-                    <div><img class="blog-single__image" src="/images/Mockups/Secuencial.jpg" alt="Imágenes de los diferentes modos de la aplicación llamada Secuencial"></div>
-                    <div>
-                        <a class="link" href="">Quiero saber más <img class="link-arrow" src="/images/iconos/flecha.svg" alt="icono flecha"></a>
-                    </div>
-                </div>
+                        <div class="card-summary">
+                            <h2 class="h3"><?php the_title(); ?></h2>
+                            <div><img class="blog-single__image" src="/images/Mockups/Secuencial.jpg" alt="Imágenes de los diferentes modos de la aplicación llamada Secuencial"></div>
+                            <div class="card-summary__text"><?php the_excerpt(); ?></div>
+                            <div>
+                                <a class="link" href="<?php the_permalink(); ?>">Quiero saber más <img class="link-arrow" src="/images/iconos/flecha.svg" alt="icono flecha"></a>
+                            </div>
+                        </div>
 
-                <div class="card-summary">
-                    <h2 class="h3">Lorem Ipsum</h2>
-                    <div><img class="blog-single__image" src="/images/Mockups/Secuencial.jpg" alt="Imágenes de los diferentes modos de la aplicación llamada Secuencial"></div>
-                    <div>
-                        <a class="link" href="">Quiero saber más <img class="link-arrow" src="/images/iconos/flecha.svg" alt="icono flecha"></a>
-                    </div>
-                </div>
-                
+                <?php endwhile; ?>
+
             </div>
 
         </section>

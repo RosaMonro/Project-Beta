@@ -2,7 +2,7 @@
 
 <main>
         <div class="card-intro">
-            <h1  class="card-intro__title">Nuestras aplicaciones para la rehabilitación neurológica</h1>
+            <h1  class="card-intro__title"><?php the_title(); ?></h1>
         </div>
 
         <div class="card-catalog">
