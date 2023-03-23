@@ -69,17 +69,17 @@ add_action ( 'wp_enqueue_scripts', 'my_scripts_and_css', 100 );
     add_action( 'widgets_init', 'mytheme_widgets_init' );
 
 
-//  REGISTRO DE TIPOS DE ENTRADA Y TAXONOMÍAS
+// //  REGISTRO DE TIPOS DE ENTRADA Y TAXONOMÍAS
 
-    function my_custom_post_types()
-    {
-        register_post_type ( 'apps', array
-        (
-            'public' => true,
-            'label' => 'aplicaciones'
-        ));
-    }
-    add_action ( 'init', 'my_custom_post_types' );
+//     function my_custom_post_types()
+//     {
+//         register_post_type ( 'apps', array
+//         (
+//             'public' => true,
+//             'label' => 'aplicaciones'
+//         ));
+//     }
+//     add_action ( 'init', 'my_custom_post_types' );
 
 
 ?>

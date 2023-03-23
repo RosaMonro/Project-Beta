@@ -7,7 +7,7 @@
 
             <h2 class="h4  card-intro__subtitle">Una fuente de recursos para tus sesiones de estimulación 
                 cognitiva diseñada por neuropsicólogos. </h2>
-            <img class="button--google" src="/images/Botones/google.png" alt="Botón con enlace a la playstore">
+            <img class="button--google" src="<?php bloginfo ( 'template_url' ); ?>/images/Botones/google.png" alt="Botón con enlace a la playstore">
 
         </div>
 
@@ -61,7 +61,7 @@
             <p class="h3">Descarga el pack</p>
 
             <a href="" target="_blank">
-                <img class="button--google" src="/images/Botones/google.png" alt="Botón con enlace a la playstore">
+                <img class="button--google" src="<?php bloginfo ( 'template_url' ); ?>/images/Botones/google.png" alt="Botón con enlace a la playstore">
             </a>
 
         </section>
@@ -88,9 +88,9 @@
                                 </div>
 
                                 <div class="product__links  links-visible1275px">
-                                    <a class="link" href="">Leer más sobre esta aplicación <img class="link-arrow" src="/images/iconos/flecha.svg" alt="icono flecha"></a>
+                                    <a class="link" href="">Leer más sobre esta aplicación <img class="link-arrow" src="<?php bloginfo ( 'template_url' ); ?>/images/iconos/flecha.svg" alt="icono flecha"></a>
                                     <a href="https://play.google.com/store/apps/details?id=com.MonteroGames.ColorinesNeuroGames" target="_blank">
-                                        <img class="button--google" src="/images/Botones/google.png" alt="Botón con enlace a la playstore">
+                                        <img class="button--google" src="<?php bloginfo ( 'template_url' ); ?>/images/Botones/google.png" alt="Botón con enlace a la playstore">
                                     </a>
                                 </div>
                     
@@ -99,9 +99,9 @@
                 </div>
 
                 <div class="product__links  links-hiden1275px">
-                    <a class="link" href="">Leer más sobre esta aplicación <img class="link-arrow" src="/images/iconos/flecha.svg" alt="icono flecha"></a>
+                    <a class="link" href="">Leer más sobre esta aplicación <img class="link-arrow" src="<?php bloginfo ( 'template_url' ); ?>/images/iconos/flecha.svg" alt="icono flecha"></a>
                     <a href="" target="_blank">
-                        <img class="button--google" src="/images/Botones/google.png" alt="Botón con enlace a la playstore">
+                        <img class="button--google" src="<?php bloginfo ( 'template_url' ); ?>/images/Botones/google.png" alt="Botón con enlace a la playstore">
                     </a>
                 </div>
 
@@ -122,9 +122,9 @@
                             </div>
 
                             <div class="product__links  links-visible1275px">
-                                <a class="link" href="">Leer más sobre esta aplicación <img class="link-arrow" src="/images/iconos/flecha.svg" alt="icono flecha"></a>
+                                <a class="link" href="">Leer más sobre esta aplicación <img class="link-arrow" src="<?php bloginfo ( 'template_url' ); ?>/images/iconos/flecha.svg" alt="icono flecha"></a>
                                 <a href="" target="_blank">
-                                    <img class="button--google" src="/images/Botones/google.png" alt="Botón con enlace a la playstore">
+                                    <img class="button--google" src="<?php bloginfo ( 'template_url' ); ?>/images/Botones/google.png" alt="Botón con enlace a la playstore">
                                 </a>
                             </div>
 
@@ -138,9 +138,9 @@
                 </div>
 
                 <div class="product__links  links-hiden1275px">
-                    <a class="link" href="">Leer más sobre esta aplicación <img class="link-arrow" src="/images/iconos/flecha.svg" alt="icono flecha"></a>
+                    <a class="link" href="">Leer más sobre esta aplicación <img class="link-arrow" src="<?php bloginfo ( 'template_url' ); ?>/images/iconos/flecha.svg" alt="icono flecha"></a>
                     <a href="" target="_blank">
-                        <img class="button--google" src="/images/Botones/google.png" alt="Botón con enlace a la playstore">
+                        <img class="button--google" src="<?php bloginfo ( 'template_url' ); ?>/images/Botones/google.png" alt="Botón con enlace a la playstore">
                     </a>
                 </div>
 

@@ -16,7 +16,9 @@
     
     <header class="topbar">
         
-        <a href="<?php echo esc_url ( home_url('/')); ?>"><img  class="topbar__logo--bicolor"  src="/images/logo/logo-bicolor.svg" alt="logotipo de sinaptikapp"></a>
+        <a href="<?php echo esc_url ( home_url('/')); ?>">
+            <img  class="topbar__logo--bicolor"  src="<?php bloginfo ( 'template_url' ); ?>/images/logo/logo-bicolor.svg" alt="logotipo de sinaptikapp">
+        </a>
 
         <div>
             <ul class="menu">

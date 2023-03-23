@@ -42,7 +42,7 @@
             <p class="h3">Descarga el pack</p>
 
             <a href="" target="_blank">
-                <img class="button--google" src="/images/Botones/google.png" alt="Botón con enlace a la playstore">
+                <img class="button--google" src="<?php bloginfo ( 'template_url' ); ?>/images/Botones/google.png" alt="Botón con enlace a la playstore">
             </a>
 
         </section>

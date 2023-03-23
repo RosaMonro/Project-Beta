@@ -11,7 +11,7 @@
                 <div class="blog__text">
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus quia voluptatem modi consequatur, beatae, architecto,
                     nulla omnis quasi autem laborum et? Nemo molestiae aliquid nobis error repudiandae, maxime quasi earum.</p>
-                    <a class="link" href="">Quiero saber más <img class="link-arrow" src="/images/iconos/flecha.svg" alt="icono flecha"></a>
+                    <a class="link" href="">Quiero saber más <img class="link-arrow" src="<?php bloginfo ( 'template_url' ); ?>/images/iconos/flecha.svg" alt="icono flecha"></a>
                 </div>
             </div>
         </div>
@@ -38,7 +38,7 @@
                     <div><img class="blog-single__image" src="/images/Mockups/Secuencial.jpg" alt="Imágenes de los diferentes modos de la aplicación llamada Secuencial"></div>
                     <div class="card-summary__text"><?php the_excerpt(); ?></div>
                     <div>
-                        <a class="link" href="<?php the_permalink(); ?>">Quiero saber más <img class="link-arrow" src="/images/iconos/flecha.svg" alt="icono flecha"></a>
+                        <a class="link" href="<?php the_permalink(); ?>">Quiero saber más <img class="link-arrow" src="<?php bloginfo ( 'template_url' ); ?>/images/iconos/flecha.svg" alt="icono flecha"></a>
                     </div>
                 </div>
 
@@ -58,7 +58,7 @@
             <p class="h3  cta__text--black">Descarga el pack</p>
 
             <a href="" target="_blank">
-                <img class="button--google" src="/images/Botones/google.png" alt="Botón con enlace a la playstore">
+                <img class="button--google" src="<?php bloginfo ( 'template_url' ); ?>/images/Botones/google.png" alt="Botón con enlace a la playstore">
             </a>
 
         </section>
