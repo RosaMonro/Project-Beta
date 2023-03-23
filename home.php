@@ -18,16 +18,6 @@
 <!-- --------------------------------------------------------------------------------------------- -->
         <!-- Loop de entradas después de "última entrada" -->
 
-        
-
-                <h1></h1>
-
-                
-
-                <a href="">Quiero saber más</a>
-
-
-
 
         <div class="card-catalog">
 
