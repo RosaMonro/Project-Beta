@@ -21,7 +21,7 @@
                 <div class="card-profile--rosa">
  
                     <div class="card-profile-info">
-                        <img class="profile__icon"  src="/images/iconos/about iconos/brain-line-icon.svg" alt="Icono de un cerebro">
+                        <img class="profile__icon"  src="<?php bloginfo ( 'template_url' ); ?>/images/iconos/about iconos/brain-line-icon.svg" alt="Icono de un cerebro">
                         <h3>Neuropsicóloga</h3>
                         <p class="profile__text">Licenciada en Psicología<br>Máster en Neuropsicología</p>
                     </div>
@@ -45,7 +45,7 @@
                 <div class="card-profile--daniel">
 
                     <div class="card-profile-info">
-                        <img class="profile__icon"  src="/images/iconos/about iconos/dna-icon.svg" alt="Icono de un cerebro">
+                        <img class="profile__icon"  src="<?php bloginfo ( 'template_url' ); ?>/images/iconos/about iconos/dna-icon.svg" alt="Icono de un cerebro">
                         <h3>Biólogo</h3>
                         <p class="profile__text">Licenciado en Biología<br>Máster en formación para el profesorado</p>
                     </div>

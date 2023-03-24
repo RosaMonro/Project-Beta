@@ -39,7 +39,7 @@
 
         <section class="card-cta">
 
-            <img class="cta__logo--black" src="/images/logo/logo-negro.svg" alt="">
+            <img class="cta__logo--black" src="<?php bloginfo ( 'template_url' ); ?>/images/logo/logo-negro.svg" alt="">
 
             <p>Adquiere todas nuestras aplicaciones en su versión completa PREMIUM y una suscripción a nuestra NEWSLETTER
                 para estar al día de nuevos lanzamientos, consejos y mucho más.</p>

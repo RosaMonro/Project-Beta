@@ -15,14 +15,22 @@
 
             <div class="card-catalog">
 
-                <?php while ( have_posts() ) : the_post(); ?>
+                <?php
+                    $news = new WP_Query ( array
+                    (
+                        'post_type' => 'post',
+                        'posts_per_page' => 3
+                    ));
+                ?>
+
+                <?php while ( $news -> have_posts() ) : $news -> the_post(); ?>
 
                         <div class="card-summary">
                             <h2 class="h3"><?php the_title(); ?></h2>
                             <div><img class="blog-single__image" src="/images/Mockups/Secuencial.jpg" alt="Imágenes de los diferentes modos de la aplicación llamada Secuencial"></div>
                             <div class="card-summary__text"><?php the_excerpt(); ?></div>
                             <div>
-                                <a class="link" href="<?php the_permalink(); ?>">Quiero saber más <img class="link-arrow" src="/images/iconos/flecha.svg" alt="icono flecha"></a>
+                                <a class="link" href="<?php the_permalink(); ?>">Quiero saber más <img class="link-arrow" src="<?php bloginfo ( 'template_url' ); ?>/images/iconos/flecha.svg" alt="icono flecha"></a>
                             </div>
                         </div>
 
@@ -34,7 +42,7 @@
 
         <section class="card-cta">
 
-            <img class="cta__logo--black" src="/images/logo/logo-negro.svg" alt="">
+            <img class="cta__logo--black" src="<?php bloginfo ( 'template_url' ); ?>/images/logo/logo-negro.svg" alt="">
 
             <p>Adquiere todas nuestras aplicaciones en su versión completa PREMIUM y una suscripción a nuestra NEWSLETTER
                 para estar al día de nuevos lanzamientos, consejos y mucho más.</p>
