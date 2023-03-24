@@ -40,12 +40,14 @@ $bp-xxl:    80rem;    //1275px - extra-extra-large
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-left: calc((100% - 580px)/2);
+        margin-left: auto;
+        margin-right: auto;
         margin-top: calc((100vh - 580px)/2);
         width: 580px;
         height: 580px;
         background-color: var(--color-teal-2);
         border-radius: 50%;             
+
     }
 
 
@@ -78,7 +80,8 @@ $bp-xxl:    80rem;    //1275px - extra-extra-large
         gap: 4em;
 
         @include mq ($bp-s) {
-            display: flex;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
             flex-direction: row;
             gap: 4em;
         }
@@ -88,15 +91,33 @@ $bp-xxl:    80rem;    //1275px - extra-extra-large
     &-catalog {
         /*---------------------SUMARY-CARDS--------------------------*/
 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 1em;
-        margin: 4.8rem 0;
+        &--2post {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1em;
+            margin: 4.8rem 0;
 
-        @include mq ($bp-xs) {
-            flex-direction: row;
-            margin: 10rem 0;
+            @include mq ($bp-xs) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                flex-direction: row;
+                margin: 10rem 0;
+            }
+        }
+
+        &--3post {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1em;
+            margin: 4.8rem 0;
+
+            @include mq ($bp-xs) {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                margin: 10rem 0;
+            }
         }
     }
 

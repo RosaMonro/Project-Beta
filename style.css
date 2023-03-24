@@ -1,11 +1,3 @@
-/*
-Theme Name: Sinaptikapp
-Description: Tema para el proyecto de SinaptikAPP
-Author: Rosa
-Version: 1.0
-*/
-
-
 @charset "UTF-8";
 :root {
   /*---variables de color---*/
@@ -328,7 +320,8 @@ p,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: calc((100% - 580px) / 2);
+  margin-left: auto;
+  margin-right: auto;
   margin-top: calc((100vh - 580px) / 2);
   width: 580px;
   height: 580px;
@@ -374,9 +367,10 @@ p,
 }
 @media only screen and (min-width: 45.3rem) {
   .card-post {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 4em 1fr;
+    grid-template-columns: 1fr 1fr;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -386,6 +380,8 @@ p,
 }
 .card-catalog {
   /*---------------------SUMARY-CARDS--------------------------*/
+}
+.card-catalog--2post {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -400,11 +396,38 @@ p,
   margin: 4.8rem 0;
 }
 @media only screen and (min-width: 38.7rem) {
-  .card-catalog {
+  .card-catalog--2post {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin: 10rem 0;
+  }
+}
+.card-catalog--3post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1em;
+  margin: 4.8rem 0;
+}
+@media only screen and (min-width: 38.7rem) {
+  .card-catalog--3post {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     margin: 10rem 0;
   }
 }
@@ -549,13 +572,14 @@ p,
 }
 @media only screen and (min-width: 45.3rem) {
   .product__firstDescription {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -ms-grid;
+    display: grid;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -ms-grid-columns: 1fr 6% 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 6%;
   }
 }
@@ -570,13 +594,14 @@ p,
 }
 @media only screen and (min-width: 45.3rem) {
   .product__secondDescription--reverse {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -ms-grid;
+    display: grid;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -ms-grid-columns: 1fr 6% 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 6%;
   }
 }
@@ -592,7 +617,6 @@ p,
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 50%;
   }
 }
 @media only screen and (min-width: 45.3rem) {
@@ -604,7 +628,6 @@ p,
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 50%;
   }
 }
 
@@ -633,7 +656,9 @@ p,
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 50%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 .blog-single {
@@ -714,14 +739,8 @@ p,
 }
 
 /*-----------------IMÁGENES ENTRADAS BLOG---------------*/
-.blog__image {
-  width: 40rem;
-  height: auto;
-  margin: 3rem 0;
-}
-
 .blog-single__image {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   margin: 3rem 0;
 }
@@ -1010,6 +1029,17 @@ textarea.input--footer {
 
 .margin-0 {
   margin: 0;
+}
+
+.h3--small {
+  font-size: 2rem;
+  font-family: "Lalezar", cursive;
+  font-weight: 400;
+}
+@media only screen and (min-width: 62.7rem) {
+  .h3--small {
+    font-size: 2.2rrem;
+  }
 }
 
 /*--------------------------------------------------------*/
