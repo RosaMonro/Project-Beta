@@ -292,6 +292,9 @@ p,
 }
 
 /*--------MEDIA QUERIES-------*/
+.card {
+  /*---------------------SUMARY-CARDS--------------------------*/
+}
 .card-intro {
   /*------------------------INTRO AMARILLA--------------------*/
   padding-top: 4%;
@@ -377,9 +380,6 @@ p,
             flex-direction: row;
     gap: 4em;
   }
-}
-.card-catalog {
-  /*---------------------SUMARY-CARDS--------------------------*/
 }
 .card-catalog--2post {
   display: -webkit-box;
