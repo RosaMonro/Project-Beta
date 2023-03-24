@@ -32,7 +32,7 @@ $bp-xxl:    80rem;    //1275px - extra-extra-large
         @include mq ($bp-s) {
             display: flex;
             flex-direction: column;
-            width: 50%;
+            justify-content: center;
         }
     }
 
