@@ -428,10 +428,6 @@ p,
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
     margin: 10rem 0;
   }
 }
@@ -576,13 +572,14 @@ p,
 }
 @media only screen and (min-width: 45.3rem) {
   .product__firstDescription {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -ms-grid;
+    display: grid;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -ms-grid-columns: 1fr 6% 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 6%;
   }
 }
@@ -597,13 +594,14 @@ p,
 }
 @media only screen and (min-width: 45.3rem) {
   .product__secondDescription--reverse {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -ms-grid;
+    display: grid;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -ms-grid-columns: 1fr 6% 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 6%;
   }
 }
@@ -619,7 +617,6 @@ p,
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 50%;
   }
 }
 @media only screen and (min-width: 45.3rem) {
@@ -631,7 +628,6 @@ p,
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 50%;
   }
 }
 
@@ -1033,6 +1029,17 @@ textarea.input--footer {
 
 .margin-0 {
   margin: 0;
+}
+
+.h3--small {
+  font-size: 2rem;
+  font-family: "Lalezar", cursive;
+  font-weight: 400;
+}
+@media only screen and (min-width: 62.7rem) {
+  .h3--small {
+    font-size: 2.2rrem;
+  }
 }
 
 /*--------------------------------------------------------*/

@@ -90,6 +90,7 @@ $bp-xxl:    80rem;    //1275px - extra-extra-large
 
     &-catalog {
         /*---------------------SUMARY-CARDS--------------------------*/
+
         &--2post {
             display: flex;
             flex-direction: column;
@@ -100,7 +101,6 @@ $bp-xxl:    80rem;    //1275px - extra-extra-large
             @include mq ($bp-xs) {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-
                 flex-direction: row;
                 margin: 10rem 0;
             }
@@ -116,8 +116,6 @@ $bp-xxl:    80rem;    //1275px - extra-extra-large
             @include mq ($bp-xs) {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
-
-                flex-direction: row;
                 margin: 10rem 0;
             }
         }

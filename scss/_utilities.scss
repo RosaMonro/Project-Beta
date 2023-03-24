@@ -37,6 +37,16 @@ $bp-xxl:    80rem;    //1275px - extra-extra-large
     margin: 0;
 }
 
+.h3--small {
+  font-size: 2rem;
+  font-family: 'Lalezar', cursive;
+  font-weight: 400;
+
+    @include mq ($bp-lm) {
+        font-size: 2.2rrem;
+    }
+}
+
 /*--------------------------------------------------------*/
 /*----------------Elemento circular absolute ABOUT-----------------*/
 .profile__bg {
