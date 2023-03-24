@@ -16,9 +16,12 @@
             <div class="card-catalog">
 
                 <?php
+                    $current_post_id = get_the_ID(); // Obtiene el ID de la entrada actual
+
                     $news = new WP_Query ( array
                     (
                         'post_type' => 'post',
+                        'post__not_in' => array( $current_post_id ), //evita que se repita la entrada en la que está en el loop
                         'posts_per_page' => 3
                     ));
                 ?>
@@ -49,7 +52,7 @@
 
             <p class="h3">Descarga el pack</p>
 
-            <a href="" target="_blank">
+            <a href="<?php the_permalink();?>" target="_blank">
                 <img class="button--google" src="<?php bloginfo ( 'template_url' ); ?>/images/Botones/google.png" alt="Botón con enlace a la playstore">
             </a>
 

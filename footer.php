@@ -23,7 +23,7 @@
 
                     <div class="footer__right">
 
-                        <a class="h2  footer__contact-link"  href="">Hablemos</a>
+                        <a class="h2  footer__contact-link"  href="<?php echo get_permalink( get_page_by_path( 'hablanos' ) ); ?>">Hablemos</a>
                         <p class="text--white">hola@sinaptikapp.com</p>
                         <p class="text--white">XXX.XXX.XXX</p>
 
