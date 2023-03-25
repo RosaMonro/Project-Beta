@@ -13,7 +13,7 @@
 
         <section>
 
-            <div class="card-catalog">
+            <div class="card-catalog--3post">
 
                 <?php
                     $current_post_id = get_the_ID(); // Obtiene el ID de la entrada actual
@@ -29,7 +29,7 @@
                 <?php while ( $news -> have_posts() ) : $news -> the_post(); ?>
 
                         <div class="card-summary">
-                            <h2 class="h3"><?php the_title(); ?></h2>
+                            <h2 class="h3--small"><?php the_title(); ?></h2>
                             <div><img class="blog-single__image" src="/images/Mockups/Secuencial.jpg" alt="Imágenes de los diferentes modos de la aplicación llamada Secuencial"></div>
                             <div class="card-summary__text"><?php the_excerpt(); ?></div>
                             <div>
