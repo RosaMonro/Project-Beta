@@ -16,6 +16,12 @@ $bp-xxl:    80rem;    //1275px - extra-extra-large
   }
 }
 
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 //--------------------IMÁGENES NAV-------------------//
 
 .topbar__logo--bicolor {
@@ -63,7 +69,6 @@ $bp-xxl:    80rem;    //1275px - extra-extra-large
 }
 
 
-
 .cta__logo--black {
     width: 31rem;
     margin: 1.6rem;
@@ -81,17 +86,14 @@ $bp-xxl:    80rem;    //1275px - extra-extra-large
 /*----Mockups---*/
 
 .mockup {
-    width: 100%;
-    height: auto;
     margin: 1em 0;
+    
 }
 
 
 /*-----------------IMÁGENES ENTRADAS BLOG---------------*/
 
 .blog-single__image {
-    max-width: 100%;
-    height: auto;
     margin: 3rem 0;
 }
 

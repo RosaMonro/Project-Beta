@@ -676,6 +676,11 @@ p,
 }
 
 /*--------MEDIA QUERIES-------*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .topbar__logo--bicolor {
   width: 13rem;
 }
@@ -733,15 +738,11 @@ p,
 /*---------------------IMÁGENES PRODUCTO--------------*/
 /*----Mockups---*/
 .mockup {
-  width: 100%;
-  height: auto;
   margin: 1em 0;
 }
 
 /*-----------------IMÁGENES ENTRADAS BLOG---------------*/
 .blog-single__image {
-  max-width: 100%;
-  height: auto;
   margin: 3rem 0;
 }
 
