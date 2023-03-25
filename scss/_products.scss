@@ -46,9 +46,8 @@ $bp-xxl:    80rem;    //1275px - extra-extra-large
 
         &__firstDescription {
             @include mq ($bp-s) {
-                display: grid;
+                display: flex;
                 flex-direction: row;
-                grid-template-columns: 1fr 1fr;
                 gap: 6%;
             }
         }
@@ -58,9 +57,8 @@ $bp-xxl:    80rem;    //1275px - extra-extra-large
             flex-direction: column-reverse;
 
             @include mq ($bp-s) {
-                display: grid;
+                display: flex;
                 flex-direction: row;
-                grid-template-columns: 1fr 1fr;
                 gap: 6%;
             }
         }
@@ -77,6 +75,7 @@ $bp-xxl:    80rem;    //1275px - extra-extra-large
             @include mq ($bp-s) {
                 display: flex;
                 flex-direction: column;
+                width: 100em;
             }
         }
         
