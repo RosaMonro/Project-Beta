@@ -532,8 +532,6 @@ p,
 
 /*--------MEDIA QUERIES-------*/
 /*----------------------------------------*/
-
-
 .product {
   margin: 6em 2em 6em 2em;
 }
@@ -574,14 +572,13 @@ p,
 }
 @media only screen and (min-width: 45.3rem) {
   .product__firstDescription {
-    display: -ms-grid;
-    display: grid;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-grid-columns: 1fr 6% 1fr;
-    grid-template-columns: 1fr 1fr;
     gap: 6%;
   }
 }
@@ -596,14 +593,13 @@ p,
 }
 @media only screen and (min-width: 45.3rem) {
   .product__secondDescription--reverse {
-    display: -ms-grid;
-    display: grid;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-grid-columns: 1fr 6% 1fr;
-    grid-template-columns: 1fr 1fr;
     gap: 6%;
   }
 }
@@ -630,6 +626,7 @@ p,
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 100em;
   }
 }
 
@@ -678,6 +675,11 @@ p,
 }
 
 /*--------MEDIA QUERIES-------*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .topbar__logo--bicolor {
   width: 13rem;
 }
@@ -733,21 +735,20 @@ p,
 }
 
 /*---------------------IMÁGENES PRODUCTO--------------*/
-
-/* ------------WP ESTILOS------- */
-
 /*----Mockups---*/
 .mockup {
-  max-width: 100%;
-  height: auto;
   margin: 1em 0;
 }
 
 /*-----------------IMÁGENES ENTRADAS BLOG---------------*/
 .blog-single__image {
-  max-width: 100%;
-  height: auto;
   margin: 3rem 0;
+}
+.blog-single__image--big {
+  max-width: 75rem;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /*-----------------------ICONOS--------------------*/
@@ -1130,10 +1131,9 @@ textarea.input--footer {
   }
 }
 
-
 .wp-block-group__inner-container {
   all: inherit;
-  width: 100%; 
+  width: 100%;
   height: 100%;
   margin: initial;
   padding: initial;

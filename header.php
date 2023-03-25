@@ -17,9 +17,11 @@
     
     <header class="topbar">
         
-        <a href="<?php echo esc_url ( home_url('/')); ?>">
-            <img  class="topbar__logo--bicolor"  src="<?php bloginfo ( 'template_url' ); ?>/images/logo/logo-bicolor.svg" alt="logotipo de sinaptikapp">
-        </a>
+        <div class="topbar__logo--bicolor">
+            <a href="<?php echo esc_url ( home_url('/')); ?>">
+                <img  class="topbar__logo--bicolor"  src="<?php bloginfo ( 'template_url' ); ?>/images/logo/logo-bicolor.svg" alt="logotipo de sinaptikapp">
+            </a>
+        </div>
 
         <div>
             <ul class="menu">
@@ -31,7 +33,7 @@
             </ul>
                 
             <div>
-                <img  class="topbar__burger-icon  btn"  onclick="toggleMenu()"  src="/images/iconos/Burger icon.svg" alt="menú" >
+                <img  class="topbar__burger-icon  btn"  onclick="toggleMenu()"  src="<?php bloginfo ( 'template_url' ); ?>/images/iconos/Burger icon.svg" alt="menú" >
                 <ul class="burger-menu  hide">
                     <li class="burger-menu__item"><a class="burger-menu__item-link h2" href="">Inicio</a></li>
                     <li class="burger-menu__item"><a class="burger-menu__item-link h2" href="">Aplicaciones</a></li>
