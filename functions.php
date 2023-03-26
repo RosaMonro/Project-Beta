@@ -20,7 +20,7 @@ function my_scripts_and_css()
     {
         if ( is_page ( 'Contact' ) )
         {
-            wp_enqueue_script ( 'js-main', get_stylesheet_directory_uri() . '/js/main.js', '', '', true );
+            wp_enqueue_script ( 'js-menu', get_stylesheet_directory_uri() . 'menu.js', '', '', true );
         }
 
         wp_enqueue_style ( 'css-main', get_stylesheet_uri(), '', filemtime ( get_template_directory() . '/style.css' ) );
@@ -31,19 +31,12 @@ add_action ( 'wp_enqueue_scripts', 'my_scripts_and_css', 100 );
 
 
 
-//  AÑADIR SOPORTE PARA...
-
-    add_theme_support ( 'title-tag' );
-    add_theme_support ( 'post-thumbnails' );
-
-
-
 //  REGISTRO DE MENÚS
 
     register_nav_menu ( 'topbar-menu', 'Cabecera del sitio' );
     register_nav_menu ( 'mobile-menu', 'Cabecera del sitio en mobile' );
-    // register_nav_menu ( 'footer-menu-left', 'Pie de página a la izquierda' );
-    // register_nav_menu ( 'footer-menu-right', 'Pie de página a la derecha' );
+    register_nav_menu ( 'footer-menu-left', 'Pie de página a la izquierda' );
+    register_nav_menu ( 'footer-menu-right', 'Pie de página a la derecha' );
 
 
 //  AÑADIR SOPORTE PARA...

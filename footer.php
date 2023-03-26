@@ -33,23 +33,31 @@
                 <div class="footer-links">
 
                     <div>
+                        
                         <a href=""><img class="footer-links__icon" src="<?php bloginfo ( 'template_url' ); ?>/images/iconos/instagram.svg" alt="icono con enlace a instragram"></a>
                         <a href=""><img class="footer-links__icon" src="<?php bloginfo ( 'template_url' ); ?>/images/iconos/whatsapp.svg" alt="icono con enlace a whatsapp"></a>
                         <a href=""><img class="footer-links__icon" src="<?php bloginfo ( 'template_url' ); ?>/images/iconos/linkedin.svg" alt="icono con enlace a linkedin"></a>
                         <a href=""><img class="footer-links__icon" src="<?php bloginfo ( 'template_url' ); ?>/images/iconos/twitter.svg" alt="icono con enlace a twitter"></a>
+
                     </div>
 
+
+
                     <div>
-                        <a class="footer-links--legal" href="">Política de privacidad. </a>
-                        <a class="footer-links--legal" href="">Aviso legal. </a>
-                        <a class="footer-links--legal" href="">Cookies. </a>
+
+                        <ul>                            
+                            <?php wp_nav_menu ( array ( 'theme_location' => 'footer-menu-right', 'container' => false , ) ); ?>
+                        </ul>                   
+                        
                     </div>
 
                 </div>
 
+        <script src="menu.js"></script>
+
+
         </footer>
 
-        <script src="menu.js"></script>
 
         <?php wp_footer(); ?>
 

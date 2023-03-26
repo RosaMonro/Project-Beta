@@ -76,7 +76,7 @@
 
                         <div class="product__mockup">
                             <h3 class="title-hidden-mobile">Secuencial</h3>
-                            <img class="mockup"  src="/images/Mockups/Secuencial.jpg" alt="Imagenes del juego llamado Secuencial">
+                            <img class="mockup"  src="<?php bloginfo ( 'template_url' ); ?>/images/Mockups/Secuencial.jpg" alt="Imagenes del juego llamado Secuencial">
                         </div>
 
                         <div class="product__text">
@@ -132,7 +132,7 @@
 
                         <div class="product__mockup">
                             <h3 class="title-hidden-mobile">Nexos</h3>
-                            <img  class="mockup"  src="/images/Mockups/nexos.png" alt="Imagenes del juego llamado Nexos">
+                            <img  class="mockup"  src="<?php bloginfo ( 'template_url' ); ?>/images/Mockups/nexos.png" alt="Imagenes del juego llamado Nexos">
                         </div>
 
                 </div>
@@ -175,7 +175,7 @@
 
                 </div>
 
-                <a class="link" href="" target="_blank">Lee más opiniones <img class="link-arrow"  src="/images/iconos/flecha.svg" alt="icono flecha"></a>
+                <a class="link" href="" target="_blank">Lee más opiniones <img class="link-arrow"  src="<?php bloginfo ( 'template_url' ); ?>/images/iconos/flecha.svg" alt="icono flecha"></a>
 
             </article>
 
