@@ -1,0 +1,27 @@
+<div class="card__last-post">
+
+        <?php
+            $args = array( 'posts_per_page' => 1 ); // Obtiene el último post
+            $latest_post = get_posts( $args );
+
+            if ( $latest_post ) {
+                foreach ( $latest_post as $post ) :
+                    $current_post_id = $post->ID; // Obtiene el ID de la entrada actual
+                    setup_postdata( $post ); ?>
+                    
+                    <!-- HTML para mostrar la última entrada -->
+                    <div class="latest-post">
+                        <h2><?php the_title(); ?></h2>
+                        <?php if ( has_post_thumbnail() ) : ?>
+                            <div class="post-thumbnail">
+                                <?php the_post_thumbnail( 'medium' ); ?>
+                            </div>
+                        <?php endif; ?>
+                        <?php the_excerpt(); ?>
+                    </div>
+                    
+                <?php endforeach;
+                wp_reset_postdata();
+            }
+        ?>
+    </div>

@@ -1048,6 +1048,10 @@ textarea.input--footer {
   }
 }
 
+.cursive {
+  font-style: italic;
+}
+
 /*--------------------------------------------------------*/
 /*----------------Elemento circular absolute ABOUT-----------------*/
 .profile__bg--teal {
