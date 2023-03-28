@@ -95,6 +95,13 @@ img {
 
 .blog-single__image {
     margin: 3rem 0;
+
+    &--big {
+        max-width: 75rem;
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 
 /*-----------------------ICONOS--------------------*/
