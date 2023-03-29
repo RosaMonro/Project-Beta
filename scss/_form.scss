@@ -21,7 +21,7 @@ form {
     display: flex;
     flex-direction: column;
     text-align: left;
-    color: var(--color-teal-1);
+    color: var(--color-teal-3);
 }
 
 
@@ -40,11 +40,11 @@ input[type="email"],
 textarea {
     height: 3em;
     margin: 1em;
-    font-family: var(--font-maitree);
-    font-size: 1.6rem;
+    // font-family: var(--font-maitree);
+    // font-size: 1.8rem;
     border-radius: 5px;
     border: none;
-    border-bottom: 2px solid var(--color-teal-1);
+    border-bottom: 2px solid var(--color-teal-3);
     background-color: var(--color-teal-2); 
 
     @include mq ($bp-xs) {
@@ -54,7 +54,7 @@ textarea {
     &:focus {
         border-radius: 5px;
         outline: none;
-        border-bottom: 2px solid var(--color-teal-1);
+        border-bottom: 2px solid var(--color-teal-3);
     }
 
     /*-------------INPUT SUSCRIPCIÓN NEWSLETTER------------*/

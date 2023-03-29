@@ -3,10 +3,12 @@
   /*---variables de color---*/
   --color-teal-1: #5CE0D8;
   --color-teal-2: #EEFCFB;
+  --color-teal-3: #23beb3;
   --color-yellow-1: #FFCF43;
   --color-yellow-2: #FFF5D6;
   --color-blue: #0A89FF;
   --color-black: #050720;
+  --color-grey: #d6d6d6;
   --color-white: #FFFFFF;
   /*---variables de tipografía---*/
   --font-lalezar: "Lalezar", cursive;
@@ -441,7 +443,7 @@ p,
           flex-direction: column;
   text-align: center;
   padding: 2em;
-  border: solid 1px var(--color-black);
+  border: solid 1px var(--color-grey);
 }
 .card-summary__text {
   text-align: left;
@@ -449,7 +451,6 @@ p,
 .card-opinions {
   /*---------------------OPINIONES------------------------*/
   background-color: var(--color-yellow-2);
-  text-align: center;
   text-align: center;
   padding: 4% 4%;
   margin: 4.8rem 0;
@@ -469,6 +470,19 @@ p,
     display: flex;
     gap: 4rem;
   }
+}
+.card-opinions__samples__unit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 .card-profile {
   /*--------------------------------ABOUT-------------------------------*/
@@ -729,9 +743,12 @@ img {
 
 /*-------------IMÁGENES OPINIONES -------------*/
 .opinions__samples__img {
-  width: 18rem;
+  width: 15rem;
+  height: 15rem;
+}
+
+.img--avatar {
   border-radius: 50%;
-  background-color: silver;
 }
 
 /*---------------------IMÁGENES PRODUCTO--------------*/
@@ -805,7 +822,7 @@ img {
           transition-timing-function: ease-out;
 }
 .link-priv {
-  color: var(--color-teal-1);
+  color: var(--color-teal-3);
   font-family: var(--font-maitree);
   font-size: 1.6rem;
 }
@@ -823,19 +840,19 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   height: 45px;
-  padding: 0 2em;
+  padding: 0 3em;
   margin: 1.5em;
   border: none;
   border-radius: 8px;
   font-family: var(--font-lalezar);
   letter-spacing: 1px;
-  background-color: var(--color-teal-1);
+  background-color: var(--color-teal-3);
   color: var(--color-teal-2);
 }
 .button--form:hover {
   background-color: var(--color-teal-2);
-  color: var(--color-teal-1);
-  border: var(--color-teal-1) 0.3rem solid;
+  color: var(--color-teal-3);
+  border: var(--color-teal-3) 0.3rem solid;
 }
 .button--footer {
   /*--------------BOTÓN SUSCRIPCIÓN FOOTER------------*/
@@ -876,7 +893,7 @@ form {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: left;
-  color: var(--color-teal-1);
+  color: var(--color-teal-3);
 }
 
 .contact {
@@ -894,11 +911,9 @@ input[type=email],
 textarea {
   height: 3em;
   margin: 1em;
-  font-family: var(--font-maitree);
-  font-size: 1.6rem;
   border-radius: 5px;
   border: none;
-  border-bottom: 2px solid var(--color-teal-1);
+  border-bottom: 2px solid var(--color-teal-3);
   background-color: var(--color-teal-2);
   /*-------------INPUT SUSCRIPCIÓN NEWSLETTER------------*/
 }
@@ -914,7 +929,7 @@ input[type=email]:focus,
 textarea:focus {
   border-radius: 5px;
   outline: none;
-  border-bottom: 2px solid var(--color-teal-1);
+  border-bottom: 2px solid var(--color-teal-3);
 }
 input[type=text].input--footer,
 input[type=email].input--footer,

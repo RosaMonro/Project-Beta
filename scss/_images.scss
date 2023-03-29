@@ -77,17 +77,20 @@ img {
 /*-------------IMÁGENES OPINIONES -------------*/
 
 .opinions__samples__img {
-    width: 18rem;
+    width: 15rem;
+    height: 15rem;
+    
+}
+
+.img--avatar {
     border-radius: 50%;
-    background-color: silver;
 }
 
 /*---------------------IMÁGENES PRODUCTO--------------*/
 /*----Mockups---*/
 
 .mockup {
-    margin: 1em 0;
-    
+    margin: 1em 0; 
 }
 
 

@@ -9,7 +9,7 @@
         justify-content: center;
 
         height: 45px;
-        padding: 0 2em;
+        padding: 0 3em;
         margin: 1.5em;
 
         border: none;
@@ -17,13 +17,13 @@
 
         font-family: var(--font-lalezar);
         letter-spacing: 1px;
-        background-color: var(--color-teal-1);
+        background-color: var(--color-teal-3);
         color:var(--color-teal-2);
 
         &:hover {
             background-color: var(--color-teal-2);
-            color: var(--color-teal-1);
-            border: var(--color-teal-1) 0.3rem solid;
+            color: var(--color-teal-3);
+            border: var(--color-teal-3) 0.3rem solid;
         }
     }
 
