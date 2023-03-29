@@ -150,7 +150,8 @@ $bp-xxl:    80rem;    //1275px - extra-extra-large
 
 
             @include mq ($bp-sm) {
-                display: flex;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
                 gap: 4rem;
             }
 
