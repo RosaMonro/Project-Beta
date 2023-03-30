@@ -19,13 +19,13 @@
                             <div class="blog__image  blog-single__image">
                                     <?php if ( has_post_thumbnail() ) : ?>
                                         <div class="post-thumbnail">
-                                            <?php the_post_thumbnail( 'medium' ); ?>
+                                            <?php the_post_thumbnail(); ?>
                                         </div>
                                     <?php endif; ?>
                             </div>
                             <div class="blog__text">
                                 <?php the_excerpt(); ?>
-                                <a class="link" href="">Quiero saber más <img class="link-arrow" src="<?php bloginfo ( 'template_url' ); ?>/images/iconos/flecha.svg" alt="icono flecha"></a>
+                                <a class="link" href="<?php the_permalink(); ?>">Quiero saber más <img class="link-arrow" src="<?php bloginfo ( 'template_url' ); ?>/images/iconos/flecha.svg" alt="icono flecha"></a>
                             </div>
                         </div>
                     </div>
@@ -78,8 +78,6 @@
 
             <p>Adquiere todas nuestras aplicaciones en su versión completa PREMIUM y una suscripción a nuestra NEWSLETTER
                 para estar al día de nuevos lanzamientos, consejos y mucho más.</p>
-
-            <p class="h3  cta__text--black">Descarga el pack</p>
 
             <a href="" target="_blank">
                 <img class="button--google" src="<?php bloginfo ( 'template_url' ); ?>/images/Botones/google.png" alt="Botón con enlace a la playstore">

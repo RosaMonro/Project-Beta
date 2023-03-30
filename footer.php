@@ -1,7 +1,7 @@
         <footer>
 
                 <div class="prefooter">
-                    <p><strong>Descarga el paquete PREMIUM</strong> y ahorra tiempo en la preparación de tus sesiones con todas las 
+                    <p><strong>Descubre la versión PREMIUM</strong> y ahorra tiempo en la preparación de tus sesiones con todas las 
                         aplicaciones disponibles de SinaptikAPP. </p>
 
                     <a href="" target="_blank">
@@ -25,7 +25,7 @@
 
                         <a class="h2  footer__contact-link"  href="<?php echo get_permalink( get_page_by_path( 'hablanos' ) ); ?>">Hablemos</a>
                         <p class="text--white">hola@sinaptikapp.com</p>
-                        <p class="text--white">XXX.XXX.XXX</p>
+                        <p class="text--white">606.646.796</p>
 
                     </div>
                 </div>
@@ -43,7 +43,7 @@
 
 
 
-                    <div>
+                    <div class="footer__menu--legal">
 
                         <ul>                            
                             <?php wp_nav_menu ( array ( 'theme_location' => 'footer-menu-right', 'container' => false , ) ); ?>
@@ -53,7 +53,7 @@
 
                 </div>
 
-        <script src="menu.js"></script>
+        <script src="/js/menu.js"></script>
 
 
         </footer>

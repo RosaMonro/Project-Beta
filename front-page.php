@@ -58,8 +58,6 @@
             <p>Adquiere todas nuestras aplicaciones en su versión completa PREMIUM y una suscripción a nuestra NEWSLETTER
                 para estar al día de nuevos lanzamientos, consejos y mucho más.</p>
 
-            <p class="h3">Descarga el pack</p>
-
             <a href="" target="_blank">
                 <img class="button--google" src="<?php bloginfo ( 'template_url' ); ?>/images/Botones/google.png" alt="Botón con enlace a la playstore">
             </a>
@@ -88,7 +86,7 @@
                                 </div>
 
                                 <div class="product__links  links-visible1275px">
-                                    <a class="link" href="">Leer más sobre esta aplicación <img class="link-arrow" src="<?php bloginfo ( 'template_url' ); ?>/images/iconos/flecha.svg" alt="icono flecha"></a>
+                                    <a class="link" href="<?php echo home_url('/secuencial/'); ?>">Leer más sobre esta aplicación <img class="link-arrow" src="<?php bloginfo ( 'template_url' ); ?>/images/iconos/flecha.svg" alt="icono flecha"></a>
                                     <a href="https://play.google.com/store/apps/details?id=com.MonteroGames.ColorinesNeuroGames" target="_blank">
                                         <img class="button--google" src="<?php bloginfo ( 'template_url' ); ?>/images/Botones/google.png" alt="Botón con enlace a la playstore">
                                     </a>
@@ -99,7 +97,7 @@
                 </div>
 
                 <div class="product__links  links-hiden1275px">
-                    <a class="link" href="">Leer más sobre esta aplicación <img class="link-arrow" src="<?php bloginfo ( 'template_url' ); ?>/images/iconos/flecha.svg" alt="icono flecha"></a>
+                    <a class="link" href="<?php echo home_url('/secuencial/'); ?>">Leer más sobre esta aplicación <img class="link-arrow" src="<?php bloginfo ( 'template_url' ); ?>/images/iconos/flecha.svg" alt="icono flecha"></a>
                     <a href="" target="_blank">
                         <img class="button--google" src="<?php bloginfo ( 'template_url' ); ?>/images/Botones/google.png" alt="Botón con enlace a la playstore">
                     </a>
@@ -122,7 +120,7 @@
                             </div>
 
                             <div class="product__links  links-visible1275px">
-                                <a class="link" href="">Leer más sobre esta aplicación <img class="link-arrow" src="<?php bloginfo ( 'template_url' ); ?>/images/iconos/flecha.svg" alt="icono flecha"></a>
+                                <a class="link" href="<?php echo home_url('/nexos/'); ?>">Leer más sobre esta aplicación <img class="link-arrow" src="<?php bloginfo ( 'template_url' ); ?>/images/iconos/flecha.svg" alt="icono flecha"></a>
                                 <a href="" target="_blank">
                                     <img class="button--google" src="<?php bloginfo ( 'template_url' ); ?>/images/Botones/google.png" alt="Botón con enlace a la playstore">
                                 </a>
@@ -138,7 +136,7 @@
                 </div>
 
                 <div class="product__links  links-hiden1275px">
-                    <a class="link" href="">Leer más sobre esta aplicación <img class="link-arrow" src="<?php bloginfo ( 'template_url' ); ?>/images/iconos/flecha.svg" alt="icono flecha"></a>
+                    <a class="link" href="<?php echo home_url('/nexos/'); ?>">Leer más sobre esta aplicación <img class="link-arrow" src="<?php bloginfo ( 'template_url' ); ?>/images/iconos/flecha.svg" alt="icono flecha"></a>
                     <a href="" target="_blank">
                         <img class="button--google" src="<?php bloginfo ( 'template_url' ); ?>/images/Botones/google.png" alt="Botón con enlace a la playstore">
                     </a>
@@ -148,7 +146,7 @@
 
         </section>
 
-        
+       
         <section>
             
             <article class="card-opinions">
@@ -158,23 +156,22 @@
                 <div class="card-opinions__samples">
 
                         <div class="card-opinions__samples__unit">
-                            <img class="opinions__samples__img" src="" alt="avatar de persona que deja su opinión">
+                            <div class="opinions__samples__img"><img class="img--avatar"  src="<?php bloginfo ( 'template_url' ); ?>/images/avatares/1.jpg" alt="avatar de persona que deja su opinión"></div>
                             <p>“Fácil de usar a pesar de las muchas combinaciones de sus variables. 
                                 He comprado la versión completa de cada una y tengo infinidad de posibilidades”</p>
                         </div>
                         <div class="card-opinions__samples__unit">
-                            <img class="opinions__samples__img" src="" alt="avatar de persona que deja su opinión">
+                            <div class="opinions__samples__img"><img class="img--avatar" src="<?php bloginfo ( 'template_url' ); ?>/images/avatares/2.jpg" alt="avatar de persona que deja su opinión"></div>
                             <p>“Representan una gran ayuda cuando preparo mis sesiones. Puedo adaptarlas a la mayoría
                                 de mis pacientes”</p>
                         </div>
                         <div class="card-opinions__samples__unit">
-                            <img class="opinions__samples__img" src="" alt="avatar de persona que deja su opinión">
+                            <div class="opinions__samples__img"><img class="img--avatar" src="<?php bloginfo ( 'template_url' ); ?>/images/avatares/3.jpg" alt="avatar de persona que deja su opinión"></div>
                             <p>“Son muy versátiles. Hay una gran variedad de aplicaciones, y puedes ajustar
                                 los modos para adaptar cada ejercicio.”</p>
                         </div>
 
                 </div>
-
                 <a class="link" href="" target="_blank">Lee más opiniones <img class="link-arrow"  src="<?php bloginfo ( 'template_url' ); ?>/images/iconos/flecha.svg" alt="icono flecha"></a>
 
             </article>

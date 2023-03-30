@@ -25,28 +25,26 @@
 
         <div>
 
-            <ul class="menu">
+            <ul class="desktop-menu">
+
                 <?php wp_nav_menu ( array ( 'theme_location' => 'topbar-menu', 'container' => false ) ); ?>
+
             </ul>
+
+
+
+            <img  class="topbar__burger-icon  btn"  onclick="toggleMenu()"  src="<?php bloginfo ( 'template_url' ); ?>/images/iconos/Burger icon.svg" alt="menú" >
+                            
+            <ul class="burger-menu  hide">
+
+                <?php wp_nav_menu ( array ( 'theme_location' => 'topbar-menu-mobile', 'container' => false ) ); ?>
+
+            </ul>    
+
                 
-   
-            <div>
-
-                <img  class="topbar__burger-icon  btn"  onclick="toggleMenu()"  src="<?php bloginfo ( 'template_url' ); ?>/images/iconos/Burger icon.svg" alt="menú" >
-                                
-                <ul class="burger-menu  hide">
-
-                <?php wp_nav_menu ( array ( 'theme_location' => 'mobile-menu', 'container' => false ) ); ?>
-
-                    <!-- <li class="burger-menu__item"><a class="burger-menu__item-link h2" href="">Inicio</a></li>
-                    <li class="burger-menu__item"><a class="burger-menu__item-link h2" href="">Aplicaciones</a></li>
-                    <li class="burger-menu__item"><a class="burger-menu__item-link h2" href="">Blog</a></li>
-                    <li class="burger-menu__item"><a class="burger-menu__item-link h2" href="">Conócenos</a></li>
-                    <li class="burger-menu__item"><a class="burger-menu__item-link h2" href="">Háblanos</a></li> -->
-                </ul>    
-
-            </div>
         </div> 
+
+        
                     
     </header>
 

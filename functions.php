@@ -1,43 +1,37 @@
 <?php
 
-// CARGAR CSS Y JS
-
-//     wp_enqueue_script ( 'js-main', get_stylesheet_directory_uri() . 'menu.js' );
-//     wp_enqueue_style ( 'css-main', get_stylesheet_uri(), '', filemtime ( get_template_directory() . 'css/style.css' ) );
-
-
-function my_scripts_and_css()
-{
-    // REMOVE GUTENBERG CSS
-
-    wp_dequeue_style ( 'wp-block-library' );
-    wp_dequeue_style ( 'wp-block-library-theme' );
-    wp_dequeue_style ( 'wc-blocks-style' );
-
-    // MY STUFF
-
-    if ( !is_admin() )
+    function my_scripts_and_css()
     {
-        if ( is_page ( 'Contact' ) )
+        // REMOVE GUTENBERG CSS
+
+        wp_dequeue_style ( 'wp-block-library' );
+        wp_dequeue_style ( 'wp-block-library-theme' );
+        wp_dequeue_style ( 'wc-blocks-style' );
+
+        // MY STUFF
+
+        if ( !is_admin() )
         {
-            wp_enqueue_script ( 'js-menu', get_stylesheet_directory_uri() . 'menu.js', '', '', true );
+            wp_enqueue_script ( 'js-menu', get_stylesheet_directory_uri() . '/js/menu.js', '', '', true );
+
+            wp_enqueue_style ( 'css-main', get_stylesheet_uri(), '', filemtime ( get_template_directory() . '/style.css' ) );
         }
-
-        wp_enqueue_style ( 'css-main', get_stylesheet_uri(), '', filemtime ( get_template_directory() . '/style.css' ) );
     }
-}
 
-add_action ( 'wp_enqueue_scripts', 'my_scripts_and_css', 100 );
-
+    add_action ( 'wp_enqueue_scripts', 'my_scripts_and_css', 100 );
 
 
+// IMÁGENES DESTACADAS
+    add_theme_support ( 'title-tag' );
+    add_theme_support ( 'post-thumbnails' );
+
+    
 //  REGISTRO DE MENÚS
 
     register_nav_menu ( 'topbar-menu', 'Cabecera del sitio' );
-    register_nav_menu ( 'mobile-menu', 'Cabecera del sitio en mobile' );
+    register_nav_menu ( 'topbar-menu-mobile', 'Cabecera del sitio en mobile' );
     register_nav_menu ( 'footer-menu-left', 'Pie de página a la izquierda' );
     register_nav_menu ( 'footer-menu-right', 'Pie de página a la derecha' );
-
 
 //  AÑADIR SOPORTE PARA...
 
@@ -74,6 +68,16 @@ add_action ( 'wp_enqueue_scripts', 'my_scripts_and_css', 100 );
 //     }
 //     add_action ( 'init', 'my_custom_post_types' );
 
+
+//MENU LEGAL
+    // function add_menuclass($ulclass) {
+    //     if (strpos($ulclass, 'menu-legal') !== false) {
+    //         return preg_replace('/<ul /', '<ul id="menu--legal" class="footer__menu--legal" ', $ulclass);
+    //     } else {
+    //         return $ulclass;
+    //     }
+    // }
+    // add_filter('wp_nav_menu','add_menuclass');
 
 
 ?>
