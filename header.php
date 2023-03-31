@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Maitree&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="/css/style.css">
-    <?php wp_title( '|', true, 'right' ); bloginfo('name'); ?>
     <?php wp_head(); ?>
 </head>
 

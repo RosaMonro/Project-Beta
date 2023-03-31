@@ -25,7 +25,7 @@
                             </div>
                             <div class="blog__text">
                                 <?php the_excerpt(); ?>
-                                <a class="link" href="<?php the_permalink(); ?>">Quiero saber más <img class="link-arrow" src="<?php bloginfo ( 'template_url' ); ?>/images/iconos/flecha.svg" alt="icono flecha"></a>
+                                <a class="link" href="<?php the_permalink(); ?>" alt="enlace a pçagina para saber más sobre este tema">Quiero saber más <img class="link-arrow" src="<?php bloginfo ( 'template_url' ); ?>/images/iconos/flecha.svg" alt="icono flecha"></a>
                             </div>
                         </div>
                     </div>

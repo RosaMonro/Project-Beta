@@ -4,7 +4,7 @@
                     <p><strong>Descubre la versión PREMIUM</strong> y ahorra tiempo en la preparación de tus sesiones con todas las 
                         aplicaciones disponibles de SinaptikAPP. </p>
 
-                    <a href="" target="_blank">
+                    <a href="" alt="enlace a play store" target="_blank">
                         <img class="button--google" src="<?php bloginfo ( 'template_url' ); ?>/images/Botones/google.png" alt="Botón con enlace a la playstore">
                     </a>
                 </div>
@@ -34,10 +34,10 @@
 
                     <div>
                         
-                        <a href=""><img class="footer-links__icon" src="<?php bloginfo ( 'template_url' ); ?>/images/iconos/instagram.svg" alt="icono con enlace a instragram"></a>
-                        <a href=""><img class="footer-links__icon" src="<?php bloginfo ( 'template_url' ); ?>/images/iconos/whatsapp.svg" alt="icono con enlace a whatsapp"></a>
-                        <a href=""><img class="footer-links__icon" src="<?php bloginfo ( 'template_url' ); ?>/images/iconos/linkedin.svg" alt="icono con enlace a linkedin"></a>
-                        <a href=""><img class="footer-links__icon" src="<?php bloginfo ( 'template_url' ); ?>/images/iconos/twitter.svg" alt="icono con enlace a twitter"></a>
+                        <a href=""  alt="enlace a instagram"><img class="footer-links__icon" src="<?php bloginfo ( 'template_url' ); ?>/images/iconos/instagram.svg" alt="icono con enlace a instragram"></a>
+                        <a href=""  alt="enlace a whastapp"><img class="footer-links__icon" src="<?php bloginfo ( 'template_url' ); ?>/images/iconos/whatsapp.svg" alt="icono con enlace a whatsapp"></a>
+                        <a href=""  alt="enlace a linkedin"><img class="footer-links__icon" src="<?php bloginfo ( 'template_url' ); ?>/images/iconos/linkedin.svg" alt="icono con enlace a linkedin"></a>
+                        <a href=""  alt="enlace a twitter"><img class="footer-links__icon" src="<?php bloginfo ( 'template_url' ); ?>/images/iconos/twitter.svg" alt="icono con enlace a twitter"></a>
 
                     </div>
 

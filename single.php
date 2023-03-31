@@ -56,7 +56,7 @@
             <p>Adquiere todas nuestras aplicaciones en su versión completa PREMIUM y una suscripción a nuestra NEWSLETTER
                 para estar al día de nuevos lanzamientos, consejos y mucho más.</p>
 
-            <a href="<?php the_permalink();?>" target="_blank">
+            <a href="<?php the_permalink();?>" target="_blank" alt="enlace a la play store">
                 <img class="button--google" src="<?php bloginfo ( 'template_url' ); ?>/images/Botones/google.png" alt="Botón con enlace a la playstore">
             </a>
 
